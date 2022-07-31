@@ -5,7 +5,7 @@ import {
   HomeSectionImage,
   ProgrammingImage,
 } from '../../../assets/images';
-import { FolderIcon } from '../../../assets/icons';
+import { DeveloperIcon, FolderIcon, MoneyIcon } from '../../../assets/icons';
 import { BorderedButton } from '../../../components/atoms/button.component';
 import { Trans } from 'react-i18next';
 
@@ -143,14 +143,14 @@ class HomePage extends Component {
             {/* Vacancies Column */}
             <div className="column-container market-column linear-gradient-border flex items-center">
               <div className="text-center">
-                <img src={FolderIcon} className="mx-auto" />
+                <img src={MoneyIcon} className="mx-auto" />
                 <h2
                   className="text-4xl font-semibold"
                   style={{ marginTop: 30, marginBottom: 30 }}
                 >
-                  +500.000
+                  35.000
                 </h2>
-                <p className="text-lg">{translate('TEXT.VACANCIES')}</p>
+                <p className="text-lg">{translate('TEXT.AVERAGE_SALARY')}</p>
               </div>
             </div>
             {/* ./Vacancies Column */}
@@ -158,12 +158,12 @@ class HomePage extends Component {
             {/* Vacancies Column */}
             <div className="column-container market-column linear-gradient-border flex items-center">
               <div className="text-center">
-                <img src={FolderIcon} className="mx-auto" />
+                <img src={DeveloperIcon} className="mx-auto" />
                 <h2
                   className="text-4xl font-semibold"
                   style={{ marginTop: 30, marginBottom: 30 }}
                 >
-                  +500.000
+                  70%
                 </h2>
                 <p className="text-lg">{translate('TEXT.VACANCIES')}</p>
               </div>
@@ -172,6 +172,41 @@ class HomePage extends Component {
           </div>
         </div>
         {/* ./Market Requirements Section */}
+
+        {/* Remaining Seats Section */}
+        <div className="grid grid-cols-12" style={{ marginTop: 200 }}>
+          {/* Left column */}
+          <div
+            className="grid grid-cols-2 col-span-6"
+            style={{ marginTop: 50 }}
+          >
+            <div className="column-container access-column"></div>
+
+            <div className="column-container access-column"></div>
+          </div>
+          {/* ./Left column */}
+
+          <div className="col-span-1"></div>
+
+          {/* Right column */}
+          <div className="flex items-left items-center col-span-5">
+            <div>
+              <h1 className="text-4xl font-semibold">
+                {translate('TEXT.BECOME_PRO')}
+              </h1>
+              <p className="text-lg mt-5">
+                <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
+              </p>
+
+              <BorderedButton
+                text={translate('BUTTONS.ACCEPT_CHALLENGE')}
+                style={{ marginTop: 40 }}
+              />
+            </div>
+          </div>
+          {/* ./Right column */}
+        </div>
+        {/* ./Remaining Seats Section */}
       </div>
     );
   }

@@ -28,6 +28,13 @@ export const it = {
       MARKET_REQUIREMENTS: 'Necessità di mercato',
       VACANCIES:
         'Posti vacanti per sviluppatori in UE (135.000 solo in Italia)',
+      AVERAGE_SALARY:
+        'Stipendio medio di uno sviluppatore in Italia. 60.000 in Germania, 65.000 € in UK e 90.000 € in Svizzera',
+      PERCENTAGE_DEVS_USING_JS:
+        'Degli sviluppatori ha usato Javascript negli ultimi 12 mesi',
+      BECOME_PRO: 'Accetta la sfida e diventa un PRO',
+      BECOME_PRO_TEXT:
+        'Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base nella programmazione. <br /> <br /> <br /> Non farti spaventare e buttati!',
     },
   },
 };
