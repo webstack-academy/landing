@@ -3,9 +3,25 @@ import { translate } from '../../common/helpers/i18n/i18n.helper';
 import { BorderedButton } from '../atoms/button.component';
 
 class Navbar extends Component {
+  state = {
+    scrolled: this.isWindowsScrolled()
+  }
+
+  listenScrollEvent = e => {
+      this.setState({scrolled: this.isWindowsScrolled()})
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
+  isWindowsScrolled(){
+    return window.scrollY > 0 ? true : false;
+  }
+
   render() {
     return (
-      <div className="navbar bg-base-100" style={{ color: 'white' }}>
+      <div className={`navbar bg-base-100 text-white sticky top-0 ${this.state.scrolled ? "border-b" : ""}`}>
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
