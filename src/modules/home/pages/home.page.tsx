@@ -92,11 +92,11 @@ class HomePage extends Component {
         {/* ./Description Section */}
 
         {/* Access Section */}
-        <div style={{ marginTop: 200 }} className="items-center text-center">
+        <div style={{ marginTop: 200 }} className="items-center text-center overflow-x-auto">
           <h1 className="text-4xl">{translate('TEXT.START_NOW')}</h1>
           <p className="text-lg">{translate('TEXT.WILL_ACCESS_TO')}</p>
 
-          <div className="grid grid-cols-4" style={{ marginTop: 50 }}>
+          <div className="grid grid-cols-4 " style={{ marginTop: 50 }}>
             <div className="column-container access-column"></div>
 
             <div className="column-container access-column"></div>
