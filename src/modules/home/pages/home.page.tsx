@@ -35,8 +35,14 @@ class HomePage extends Component {
           </div>
           {/* ./Right column */}
         </div>
+        <div className="text-center mt-12">
+          <a href="#secondSection" className="inline-block border-2 rounded-full text-xl font-bold" style={{ width: 50, height: 50, paddingTop: 10 }}>
+            &darr;
+          </a>
+        </div>
         {/* Header Section */}
 
+        <span id="secondSection">&zwnj;</span>
         {/* Brief Section */}
         <div className="grid grid-cols-2" style={{ marginTop: 200 }}>
           {/* Left column */}
