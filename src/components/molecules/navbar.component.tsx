@@ -1,22 +1,22 @@
-import React, { Component, StyleHTMLAttributes } from 'react';
+import React, { Component } from 'react';
 import { translate } from '../../common/helpers/i18n/i18n.helper';
 import { BorderedButton } from '../atoms/button.component';
 
 class Navbar extends Component {
   state = {
-    scrolled: this.isWindowsScrolled()
+    scrolled: this.isWindowScrolled()
   }
 
-  listenScrollEvent = e => {
-      this.setState({scrolled: this.isWindowsScrolled()})
+  listenScrollEvent = () => {
+      this.setState({scrolled: this.isWindowScrolled()})
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent)
   }
 
-  isWindowsScrolled(){
-    return window.scrollY > 0 ? true : false;
+  isWindowScrolled(){
+    return window.scrollY > 0;
   }
 
   render() {
