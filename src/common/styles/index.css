@@ -50,7 +50,33 @@ p {
 }
 
 .access-column {
+  padding: 0!important;
   min-height: 400px;
+  width: 294px;
+}
+
+.access-column-icon-container {
+  height: 170px;
+  background: #131313;
+  border-radius: 0px 0px 40px 40px;
+  width: 114px;
+}
+
+.access-column p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.access-column-icon-container img {
+  margin-top: 60.42%;
+}
+
+.access-column-title {
+  background: linear-gradient(90deg, #FFFFFF 26.87%, rgba(255, 255, 255, 0.2) 81.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .market-column {

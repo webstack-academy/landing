@@ -14,7 +14,7 @@ export const it = {
         'Partecipa alle nostre classi in diretta e impara dai migliori professionisti del settore ed entra nella più esclusiva community di programmatori.',
       WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER:
         'Abbiamo creato un percorso per diventare',
-      FULL_STACK_WEB_DEVELOPER: 'un full-stack web developer',
+      FULL_STACK_WEB_DEVELOPER: 'full-stack <br> web developer',
       FOUR_MONTHS: 'in soli 4 mesi',
       OUR_ACADEMY: 'La nostra Academy',
       OUR_ACADEMY_DESCRIPTION:
@@ -35,7 +35,7 @@ export const it = {
         'Degli sviluppatori ha usato Javascript negli ultimi 12 mesi',
       BECOME_PRO: 'Accetta la sfida e diventa un PRO',
       BECOME_PRO_TEXT:
-        'Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base nella programmazione. <br /> <br /> <br /> Non farti spaventare e buttati!',
+        "Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base della conoscienza dell'informatica. <br /> <br /> <br /> Non farti spaventare e buttati!",
       NEED_MORE_INFO: 'Hai bisogno di più informazioni?',
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
@@ -44,6 +44,18 @@ export const it = {
       COOKIES_POLICY: 'Cookie Policy',
       PRIVACY_POLICY: 'Privacy Policy',
       TERMS_OF_USE: 'Termini e condizioni',
+      COMMUNITY: 'Community',
+      COMMUNITY_MENTORS_STUDENTS:
+        'Una vasta community di studenti e mentor con cui confrontarsi',
+      LIVE_STREAMING: 'Live streaming',
+      LIVE_STREAMING_DESCRIPTION:
+        'Lezione in streaming ogni giorno (Dal Lunedi al Venerdì) in diretta streaming.',
+      PLATFORM: 'Piattaforma',
+      PLATFORM_DESCRIPTION:
+        'Accesso a vita alla piattaforma web dove potrai trovare lezioni aggiuntive, forum, supporto e networking',
+      INDIVIDUAL_LESSONS: 'Lezioni individuali',
+      INDIVIDUAL_LESSONS_DESCRIPTION:
+        'Lezioni individuali con ogni studente per la preparazione ai colloqui tecnici',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',

@@ -4,7 +4,15 @@ import {
   DescriptionSectionImage,
   HomeSectionImage,
 } from '../../../assets/images';
-import { DeveloperIcon, FolderIcon, MoneyIcon } from '../../../assets/icons';
+import {
+  CommunityIcon,
+  DeveloperIcon,
+  FlagIcon,
+  FolderIcon,
+  IndividualIcon,
+  MoneyIcon,
+  StreamingIcon,
+} from '../../../assets/icons';
 import {
   BorderedButton,
   BigColoredButton,
@@ -17,7 +25,10 @@ class HomePage extends Component {
     return (
       <div className="md:container mx-auto page-container">
         {/* Header Section */}
-        <div className="grid grid-cols-12" style={{ marginTop: 150 }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12"
+          style={{ marginTop: 150 }}
+        >
           {/* Left column */}
           <div className="col-span-5">
             <h1 className="text-7xl font-semibold">
@@ -51,7 +62,10 @@ class HomePage extends Component {
 
         <span id="secondSection">&zwnj;</span>
         {/* Brief Section */}
-        <div className="grid grid-cols-2" style={{ marginTop: 200 }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
+          style={{ marginTop: 200 }}
+        >
           {/* Left column */}
           <div className="linear-gradient-border column-container flex items-center	">
             <div>
@@ -59,7 +73,7 @@ class HomePage extends Component {
                 {translate('TEXT.WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER')}
               </h1>
               <h1 className="text-5xl font-semibold mt-4">
-                {translate('TEXT.FULL_STACK_WEB_DEVELOPER')}
+                <Trans i18nKey="TEXT.FULL_STACK_WEB_DEVELOPER" />
               </h1>
               <h1 className="text-4xl mt-4">{translate('TEXT.FOUR_MONTHS')}</h1>
             </div>
@@ -80,7 +94,10 @@ class HomePage extends Component {
         {/* ./Brief Section */}
 
         {/* Description Section */}
-        <div className="grid grid-cols-2" style={{ marginTop: 200 }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
+          style={{ marginTop: 200 }}
+        >
           {/* Left column */}
           <div>
             <img src={DescriptionSectionImage} />
@@ -112,14 +129,81 @@ class HomePage extends Component {
           <h1 className="text-4xl">{translate('TEXT.START_NOW')}</h1>
           <p className="text-lg">{translate('TEXT.WILL_ACCESS_TO')}</p>
 
-          <div className="grid grid-cols-4 " style={{ marginTop: 50 }}>
-            <div className="column-container access-column"></div>
+          <div
+            className="flex flex-nowrap overflow-x-auto"
+            style={{ marginTop: 50 }}
+          >
+            {/* Community Column */}
+            <div className="column-container access-column flex-none">
+              <div className="grid justify-items-center">
+                <div className="access-column-icon-container">
+                  <img src={CommunityIcon} className="mx-auto" />
+                </div>
 
-            <div className="column-container access-column"></div>
+                <h1 className="text-2xl mt-5 font-extrabold	access-column-title">
+                  {translate('TEXT.COMMUNITY')}
+                </h1>
 
-            <div className="column-container access-column"></div>
+                <p className="text-md mt-5">
+                  {translate('TEXT.COMMUNITY_MENTORS_STUDENTS')}
+                </p>
+              </div>
+            </div>
+            {/* ./Community Column */}
 
-            <div className="column-container access-column"></div>
+            {/* LiveStreaming Column */}
+            <div className="column-container access-column flex-none">
+              <div className="grid justify-items-center">
+                <div className="access-column-icon-container">
+                  <img src={StreamingIcon} className="mx-auto" />
+                </div>
+
+                <h1 className="text-2xl mt-5 font-extrabold	access-column-title">
+                  {translate('TEXT.LIVE_STREAMING')}
+                </h1>
+
+                <p className="text-md mt-5">
+                  {translate('TEXT.LIVE_STREAMING_DESCRIPTION')}
+                </p>
+              </div>
+            </div>
+            {/* ./LiveStreaming Column */}
+
+            {/* Platform Column */}
+            <div className="column-container access-column flex-none">
+              <div className="grid justify-items-center">
+                <div className="access-column-icon-container">
+                  <img src={FlagIcon} className="mx-auto" />
+                </div>
+
+                <h1 className="text-2xl mt-5 font-extrabold	access-column-title">
+                  {translate('TEXT.PLATFORM')}
+                </h1>
+
+                <p className="text-md mt-5">
+                  {translate('TEXT.PLATFORM_DESCRIPTION')}
+                </p>
+              </div>
+            </div>
+            {/* ./Platform Column */}
+
+            {/* Individual Lessons Column */}
+            <div className="column-container access-column flex-none">
+              <div className="grid justify-items-center">
+                <div className="access-column-icon-container">
+                  <img src={IndividualIcon} className="mx-auto" />
+                </div>
+
+                <h1 className="text-2xl mt-5 font-extrabold	access-column-title">
+                  {translate('TEXT.INDIVIDUAL_LESSONS')}
+                </h1>
+
+                <p className="text-md mt-5">
+                  {translate('TEXT.INDIVIDUAL_LESSONS_DESCRIPTION')}
+                </p>
+              </div>
+            </div>
+            {/* ./Individual Lessons Column */}
           </div>
         </div>
         {/* ./Access Section */}
@@ -191,7 +275,7 @@ class HomePage extends Component {
 
         {/* Remaining Seats Section */}
         <div
-          className="grid grid-cols-12"
+          className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12"
           style={{ marginTop: 100, marginBottom: 100 }}
         >
           {/* Left column */}
