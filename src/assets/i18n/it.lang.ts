@@ -6,6 +6,7 @@ export const it = {
       WHY: 'Perché',
       COURSE: 'Corso',
       ACCEPT_CHALLENGE: 'Accetta la sfida',
+      SEND_REQUEST: 'Invia richieta',
     },
     TEXT: {
       HOME_SECTION_TITLE: 'Diventa uno sviluppatore web',
@@ -35,6 +36,19 @@ export const it = {
       BECOME_PRO: 'Accetta la sfida e diventa un PRO',
       BECOME_PRO_TEXT:
         'Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base nella programmazione. <br /> <br /> <br /> Non farti spaventare e buttati!',
+      NEED_MORE_INFO: 'Hai bisogno di più informazioni?',
+      CONTACT_US: 'Contattaci!',
+      COMPILE_FORM_GET_INFO:
+        'Compila il form per richiedere magiori informazioni, ti risponderemo il prima possibile.',
+      COPYRIGHT: 'Copyright © 2020 Webstack Academy.',
+      COOKIES_POLICY: 'Cookie Policy',
+      PRIVACY_POLICY: 'Privacy Policy',
+      TERMS_OF_USE: 'Termini e condizioni',
+    },
+    INPUTS: {
+      YOUR_NAME: 'Il tuo nome',
+      YOUR_SURNAME: 'Il tuo cognome',
+      YOUR_EMAIL: 'La tua E-mail',
     },
   },
 };

@@ -64,3 +64,28 @@ p {
   background-size: cover;
   border-radius: 20px;
 }
+
+.contact-input {
+  border-radius: 14px!important;
+  color: rgba(255, 255, 255, 1)!important;
+}
+
+.contact-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.48);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page-container {
+  max-width: 1440px!important;
+}
+
+/* Override Daisy Css */
+.max-w-xs {
+  max-width: 25rem!important;
+}
+
+.footer-anchor a {
+  text-decoration: underline;
+}

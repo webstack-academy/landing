@@ -3,16 +3,19 @@ import { translate } from '../../../common/helpers/i18n/i18n.helper';
 import {
   DescriptionSectionImage,
   HomeSectionImage,
-  ProgrammingImage,
 } from '../../../assets/images';
 import { DeveloperIcon, FolderIcon, MoneyIcon } from '../../../assets/icons';
-import { BorderedButton } from '../../../components/atoms/button.component';
+import {
+  BorderedButton,
+  BigColoredButton,
+} from '../../../components/atoms/button.component';
 import { Trans } from 'react-i18next';
+import { FooterComponent } from '../../../components/organisms/footer.component';
 
 class HomePage extends Component {
   render() {
     return (
-      <div className="md:container mx-auto">
+      <div className="md:container mx-auto page-container">
         {/* Header Section */}
         <div className="grid grid-cols-12" style={{ marginTop: 150 }}>
           {/* Left column */}
@@ -36,7 +39,11 @@ class HomePage extends Component {
           {/* ./Right column */}
         </div>
         <div className="text-center mt-12">
-          <a href="#secondSection" className="inline-block border-2 rounded-full text-xl font-bold" style={{ width: 50, height: 50, paddingTop: 10 }}>
+          <a
+            href="#secondSection"
+            className="inline-block border-2 rounded-full text-xl font-bold"
+            style={{ width: 50, height: 50, paddingTop: 10 }}
+          >
             &darr;
           </a>
         </div>
@@ -98,7 +105,10 @@ class HomePage extends Component {
         {/* ./Description Section */}
 
         {/* Access Section */}
-        <div style={{ marginTop: 200 }} className="items-center text-center overflow-x-auto">
+        <div
+          style={{ marginTop: 200 }}
+          className="items-center text-center overflow-x-auto"
+        >
           <h1 className="text-4xl">{translate('TEXT.START_NOW')}</h1>
           <p className="text-lg">{translate('TEXT.WILL_ACCESS_TO')}</p>
 
@@ -180,7 +190,10 @@ class HomePage extends Component {
         {/* ./Market Requirements Section */}
 
         {/* Remaining Seats Section */}
-        <div className="grid grid-cols-12" style={{ marginTop: 200 }}>
+        <div
+          className="grid grid-cols-12"
+          style={{ marginTop: 100, marginBottom: 100 }}
+        >
           {/* Left column */}
           <div
             className="grid grid-cols-2 col-span-6"
@@ -213,6 +226,72 @@ class HomePage extends Component {
           {/* ./Right column */}
         </div>
         {/* ./Remaining Seats Section */}
+
+        {/* Contact Usa Section */}
+        <div className="grid grid-cols-12 contact-section">
+          {/* Left column */}
+          <div className="grid grid-cols-2 col-span-6">
+            <div className="flex items-left items-center col-span-5">
+              <div>
+                <h1 className="text-4xl">{translate('TEXT.NEED_MORE_INFO')}</h1>
+                <h1 className="text-4xl">{translate('TEXT.CONTACT_US')}</h1>
+                <p className="text-lg mt-5">
+                  {translate('TEXT.COMPILE_FORM_GET_INFO')}
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* ./Left column */}
+
+          <div className="col-span-1"></div>
+
+          {/* Right column */}
+          <div className="flex justify-end col-span-5">
+            <div className="form-control w-full max-w-xs">
+              {/* Name Input */}
+              <input
+                type="text"
+                placeholder={translate('INPUTS.YOUR_NAME')}
+                className="input input-bordered w-full max-w-xs contact-input input-lg"
+              />
+              {/* ./Name Input */}
+
+              {/* Surname Input */}
+              <input
+                type="text"
+                style={{
+                  marginTop: 24,
+                  marginBottom: 24,
+                }}
+                placeholder={translate('INPUTS.YOUR_SURNAME')}
+                className="input input-bordered w-full max-w-xs contact-input input-lg"
+              />
+              {/* ./Surname Input */}
+
+              {/* Email Input */}
+              <input
+                type="email"
+                placeholder={translate('INPUTS.YOUR_EMAIL')}
+                className="input input-bordered w-full max-w-xs contact-input input-lg"
+              />
+              {/* ./Email Input */}
+              <BigColoredButton
+                text={translate('BUTTONS.SEND_REQUEST')}
+                style={{
+                  marginTop: 24,
+                  backgroundColor: '#fff',
+                  color: '#000',
+                }}
+              />
+            </div>
+          </div>
+          {/* ./Right column */}
+        </div>
+        {/* ./Contact Usa Section */}
+
+        {/* Footer */}
+        <FooterComponent />
+        {/* ./Footer */}
       </div>
     );
   }

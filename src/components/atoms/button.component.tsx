@@ -11,3 +11,14 @@ export const BorderedButton = (props: {
     </button>
   );
 };
+
+export const BigColoredButton = (props: {
+  text: string;
+  style?: CSSProperties;
+}) => {
+  return (
+    <button className="btn btn-lg" style={{ borderRadius: 8, ...props.style }}>
+      {translate(props.text)}
+    </button>
+  );
+};
