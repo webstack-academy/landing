@@ -34,7 +34,9 @@ class HomePage extends Component {
             <h1 className="header-title font-semibold">
               {translate('TEXT.HOME_SECTION_TITLE')}
             </h1>
-            <p className="text-lg">{translate('TEXT.ACADEMY_SUBSCRIBE')}</p>
+            <p className="text-lg mt-2">
+              {translate('TEXT.ACADEMY_SUBSCRIBE')}
+            </p>
 
             <BorderedButton
               text={translate('BUTTONS.ACCEPT_CHALLENGE')}
