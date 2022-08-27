@@ -2,26 +2,37 @@ import React, { Component } from 'react';
 import { translate } from '../../common/helpers/i18n/i18n.helper';
 import { BorderedButton } from '../atoms/button.component';
 
-class Navbar extends Component {
+interface NavbarProps {
+  contactsCallback: () => void;
+  academyCallback: () => void;
+  courseCallback: () => void;
+  whyCallback: () => void;
+}
+
+class Navbar extends Component<NavbarProps, any> {
   state = {
-    scrolled: this.isWindowScrolled()
-  }
+    scrolled: this.isWindowScrolled(),
+  };
 
   listenScrollEvent = () => {
-      this.setState({scrolled: this.isWindowScrolled()})
-  }
+    this.setState({ scrolled: this.isWindowScrolled() });
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener('scroll', this.listenScrollEvent);
   }
 
-  isWindowScrolled(){
+  isWindowScrolled() {
     return window.scrollY > 0;
   }
 
   render() {
     return (
-      <div className={`navbar bg-base-100 text-white sticky top-0 ${this.state.scrolled ? "border-b" : ""}`}>
+      <div
+        className={`navbar bg-base-100 text-white sticky top-0 ${
+          this.state.scrolled ? 'border-b' : ''
+        }`}
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -49,21 +60,27 @@ class Navbar extends Component {
                * Academy Button
                */}
               <li>
-                <a>{translate('BUTTONS.ACADEMY')}</a>
+                <a onClick={() => this.props.academyCallback()}>
+                  {translate('BUTTONS.ACADEMY')}
+                </a>
               </li>
 
               {/**
                * Course Button
                */}
               <li>
-                <a>{translate('BUTTONS.COURSE')}</a>
+                <a onClick={() => this.props.courseCallback()}>
+                  {translate('BUTTONS.COURSE')}
+                </a>
               </li>
 
               {/**
                * Why Button
                */}
               <li>
-                <a>{translate('BUTTONS.WHY')}?</a>
+                <a onClick={() => this.props.whyCallback()}>
+                  {translate('BUTTONS.WHY')}?
+                </a>
               </li>
             </ul>
           </div>
@@ -75,28 +92,37 @@ class Navbar extends Component {
              * Academy Button
              */}
             <li>
-              <a>{translate('BUTTONS.ACADEMY')}</a>
+              <a onClick={() => this.props.academyCallback()}>
+                {translate('BUTTONS.ACADEMY')}
+              </a>
             </li>
 
             {/**
              * Course Button
              */}
             <li>
-              <a>{translate('BUTTONS.COURSE')}</a>
+              <a onClick={() => this.props.courseCallback()}>
+                {translate('BUTTONS.COURSE')}
+              </a>
             </li>
 
             {/**
              * Why Button
              */}
             <li>
-              <a>{translate('BUTTONS.WHY')}?</a>
+              <a onClick={() => this.props.whyCallback()}>
+                {translate('BUTTONS.WHY')}?
+              </a>
             </li>
           </ul>
         </div>
 
         {/** Contact Us Button */}
         <div className="navbar-end">
-          <BorderedButton text={translate('BUTTONS.CONTACT_US')} />
+          <BorderedButton
+            onClick={() => this.props.contactsCallback()}
+            text={translate('BUTTONS.CONTACT_US')}
+          />
         </div>
         {/** ./Contact Us Button */}
       </div>

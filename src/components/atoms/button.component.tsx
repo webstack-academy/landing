@@ -4,9 +4,14 @@ import React, { CSSProperties } from 'react';
 export const BorderedButton = (props: {
   text: string;
   style?: CSSProperties;
+  onClick?: () => void;
 }) => {
   return (
-    <button className="btn btn-black contact-btn" style={props.style}>
+    <button
+      onClick={() => props.onClick()}
+      className="btn btn-black contact-btn"
+      style={props.style}
+    >
       {translate(props.text)}
     </button>
   );
