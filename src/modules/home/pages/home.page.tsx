@@ -215,7 +215,7 @@ class HomePage extends Component {
         {/* Picture Separator Section */}
         <div
           style={{ marginTop: 100, marginBottom: 100 }}
-          className="grid grid-cols-1 items-center"
+          className="grid grid-cols-1 items-center picture-separator-container"
         >
           <div className="mx-auto picture-separator-section"></div>
         </div>

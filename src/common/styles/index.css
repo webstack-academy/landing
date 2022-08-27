@@ -175,6 +175,11 @@ p {
   .footer-container {
     padding: 30px;
   }
+
+  .picture-separator-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 /* Override Daisy Css */
