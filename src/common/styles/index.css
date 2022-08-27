@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 h1 {
@@ -22,6 +22,11 @@ h2 {
 
 p {
   color: white;
+}
+
+.header-title {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .contact-btn {
@@ -55,6 +60,29 @@ p {
   width: 294px;
 }
 
+.remaining-seats-column {
+  padding: 0!important;
+  min-height: 400px;
+  width: 294px;
+  margin: 0!important;
+}
+
+.remaining-seats-column p {
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 240px;
+  line-height: 222px;
+
+  text-align: center;
+
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .access-column-icon-container {
   height: 170px;
   background: #131313;
@@ -81,6 +109,7 @@ p {
 
 .market-column {
   min-height: 370px;
+  width: 401px!important;
 }
 
 .picture-separator-section {
@@ -105,6 +134,43 @@ p {
 
 .page-container {
   max-width: 1440px!important;
+}
+
+.contact-form-container {
+  justify-content: flex-end
+}
+
+.contact-description-container {
+  justify-content: flex-start!important;
+  padding: 20px;
+}
+
+/* MediaQuery */
+@media only screen and (max-width: 600px) {
+  .remaining-seats-column {
+    width: 162px;
+    min-height: 223px;
+  }
+
+  .remaining-seats-column p {
+    font-size: 100px;
+    line-height: 117px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-description-container {
+    justify-content: center!important;
+  }
+
+  .header-title {
+    font-size: 3.5rem;
+  }
+
+  .contact-form-container {
+    margin-top: 40px;
+    justify-content: center!important;
+  }
 }
 
 /* Override Daisy Css */

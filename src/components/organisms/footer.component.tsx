@@ -5,14 +5,14 @@ import { ConditionsUrl } from '../../common/enum/url.enum';
 export const FooterComponent = () => {
   return (
     <div
-      className="grid grid-cols-12 footer-anchor"
+      className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12 footer-anchor"
       style={{ paddingTop: 40, paddingBottom: 40 }}
     >
       <div className="col-span-3">
         <p className="text-lg">{translate('TEXT.COPYRIGHT')}</p>
       </div>
 
-      <div className="col-span-1">
+      <div className="col-span-2">
         <p className="text-lg">
           <a
             target="_blank"
@@ -24,7 +24,7 @@ export const FooterComponent = () => {
         </p>
       </div>
 
-      <div className="col-span-1">
+      <div className="col-span-2">
         <a target="_blank" href={ConditionsUrl.PrivacyPolicy} rel="noreferrer">
           <p className="text-lg">{translate('TEXT.PRIVACY_POLICY')}</p>
         </a>
@@ -36,7 +36,7 @@ export const FooterComponent = () => {
         </a>
       </div>
 
-      <div className="col-span-5"></div>
+      <div className="col-span-3"></div>
     </div>
   );
 };

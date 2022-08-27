@@ -30,8 +30,8 @@ class HomePage extends Component {
           style={{ marginTop: 150 }}
         >
           {/* Left column */}
-          <div className="col-span-5">
-            <h1 className="text-7xl font-semibold">
+          <div className="col-span-5 p-5">
+            <h1 className="header-title font-semibold">
               {translate('TEXT.HOME_SECTION_TITLE')}
             </h1>
             <p className="text-lg">{translate('TEXT.ACADEMY_SUBSCRIBE')}</p>
@@ -64,7 +64,7 @@ class HomePage extends Component {
         {/* Brief Section */}
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-          style={{ marginTop: 200 }}
+          style={{ marginTop: 100 }}
         >
           {/* Left column */}
           <div className="linear-gradient-border column-container flex items-center	">
@@ -105,14 +105,16 @@ class HomePage extends Component {
           {/* ./Left column */}
 
           {/* Right column */}
-          <div className="flex items-left items-center">
+          <div className="flex items-left items-center p-5">
             <div className="text-left">
               <h1 className="text-4xl">
                 {translate('TEXT.COURSE_DESCRIPTION_TITLE')}
               </h1>
 
-              <h2 className="text-2xl">{translate('TEXT.COURSE_SUBTITLE')}</h2>
-              <p className="text-lg">
+              <h2 className="text-2xl mt-2">
+                {translate('TEXT.COURSE_SUBTITLE')}
+              </h2>
+              <p className="text-lg mt-2">
                 <Trans i18nKey="TEXT.COURSE_DESCRIPTION" />
               </p>
             </div>
@@ -123,7 +125,7 @@ class HomePage extends Component {
 
         {/* Access Section */}
         <div
-          style={{ marginTop: 200 }}
+          style={{ marginTop: 100 }}
           className="items-center text-center overflow-x-auto"
         >
           <h1 className="text-4xl">{translate('TEXT.START_NOW')}</h1>
@@ -220,13 +222,16 @@ class HomePage extends Component {
         {/* Market Requirements Section */}
         <div
           style={{ marginTop: 100, marginBottom: 100 }}
-          className="grid grid-cols-1 items-center text-center"
+          className="items-center text-center overflow-x-auto"
         >
           <h1 className="text-4xl">{translate('TEXT.MARKET_REQUIREMENTS')}</h1>
 
-          <div className="grid grid-cols-3" style={{ marginTop: 50 }}>
+          <div
+            className="flex flex-nowrap overflow-x-auto"
+            style={{ marginTop: 50 }}
+          >
             {/* Vacancies Column */}
-            <div className="column-container market-column linear-gradient-border flex items-center">
+            <div className="column-container market-column linear-gradient-border items-center flex-none">
               <div className="text-center">
                 <img src={FolderIcon} className="mx-auto" />
                 <h2
@@ -241,7 +246,7 @@ class HomePage extends Component {
             {/* ./Vacancies Column */}
 
             {/* Vacancies Column */}
-            <div className="column-container market-column linear-gradient-border flex items-center">
+            <div className="column-container market-column linear-gradient-border items-center flex-none">
               <div className="text-center">
                 <img src={MoneyIcon} className="mx-auto" />
                 <h2
@@ -256,7 +261,7 @@ class HomePage extends Component {
             {/* ./Vacancies Column */}
 
             {/* Vacancies Column */}
-            <div className="column-container market-column linear-gradient-border flex items-center">
+            <div className="column-container market-column linear-gradient-border items-center flex-none">
               <div className="text-center">
                 <img src={DeveloperIcon} className="mx-auto" />
                 <h2
@@ -280,19 +285,23 @@ class HomePage extends Component {
         >
           {/* Left column */}
           <div
-            className="grid grid-cols-2 col-span-6"
+            className="grid grid-cols-2 col-span-6 justify-items-center"
             style={{ marginTop: 50 }}
           >
-            <div className="column-container access-column"></div>
+            <div className="column-container remaining-seats-column flex items-center justify-center">
+              <p>1</p>
+            </div>
 
-            <div className="column-container access-column"></div>
+            <div className="column-container remaining-seats-column flex items-center justify-center">
+              <p>5</p>
+            </div>
           </div>
           {/* ./Left column */}
 
           <div className="col-span-1"></div>
 
           {/* Right column */}
-          <div className="flex items-left items-center col-span-5">
+          <div className="flex items-left items-center col-span-5 p-5">
             <div>
               <h1 className="text-4xl font-semibold">
                 {translate('TEXT.BECOME_PRO')}
@@ -312,10 +321,10 @@ class HomePage extends Component {
         {/* ./Remaining Seats Section */}
 
         {/* Contact Usa Section */}
-        <div className="grid grid-cols-12 contact-section">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 contact-section pl-2 pr-2">
           {/* Left column */}
-          <div className="grid grid-cols-2 col-span-6">
-            <div className="flex items-left items-center col-span-5">
+          <div className="grid grid-cols-2">
+            <div className="flex contact-description-container items-left items-center col-span-5">
               <div>
                 <h1 className="text-4xl">{translate('TEXT.NEED_MORE_INFO')}</h1>
                 <h1 className="text-4xl">{translate('TEXT.CONTACT_US')}</h1>
@@ -327,10 +336,8 @@ class HomePage extends Component {
           </div>
           {/* ./Left column */}
 
-          <div className="col-span-1"></div>
-
           {/* Right column */}
-          <div className="flex justify-end col-span-5">
+          <div className="flex contact-form-container">
             <div className="form-control w-full max-w-xs">
               {/* Name Input */}
               <input
