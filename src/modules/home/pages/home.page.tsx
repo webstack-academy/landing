@@ -5,6 +5,7 @@ import {
   HomeSectionImage,
 } from '../../../assets/images';
 import {
+  ArrowCircleIcon,
   CommunityIcon,
   DeveloperIcon,
   FlagIcon,
@@ -20,6 +21,7 @@ import {
 import { Trans } from 'react-i18next';
 import { FooterComponent } from '../../../components/organisms/footer.component';
 import Navbar from '../../../components/molecules/navbar.component';
+import { MailchimpForm } from '../../../components/organisms/mailchip-form.component';
 
 class HomePage extends Component {
   private briefSectionRef = React.createRef();
@@ -31,9 +33,29 @@ class HomePage extends Component {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   }
 
+  private showHide;
+
   render() {
+    // @ts-ignore
     return (
       <div>
+        {/** Accept Challenge Modal */}
+        <div className="modal" id="my-modal-2">
+          <div className="modal-box">
+            <a
+              href="#"
+              className="btn btn-sm btn-circle absolute right-2 top-2"
+            >
+              ✕
+            </a>
+
+            {/** Mailchip Signup Form */}
+            <MailchimpForm formPosition="center" />
+            {/** ./Mailchip Signup Form */}
+          </div>
+        </div>
+        {/** ./Accept Challenge Modal */}
+
         <Navbar
           contactsCallback={() => this.scroll(this.contactSectionRef)}
           whyCallback={() => this.scroll(this.marketRequirementsSectionRef)}
@@ -56,10 +78,13 @@ class HomePage extends Component {
                   {translate('TEXT.ACADEMY_SUBSCRIBE')}
                 </p>
 
-                <BorderedButton
-                  text={translate('BUTTONS.ACCEPT_CHALLENGE')}
-                  style={{ marginTop: 40 }}
-                />
+                <a href="#my-modal-2">
+                  <BorderedButton
+                    text={translate('BUTTONS.ACCEPT_CHALLENGE')}
+                    style={{ marginTop: 40 }}
+                    onClick={() => console.log('opened accept challenge modal')}
+                  />
+                </a>
               </div>
               {/* ./Left column */}
 
@@ -72,13 +97,13 @@ class HomePage extends Component {
 
             <div className="text-center" style={{ marginTop: 200 }}>
               <button
-                className="inline-block border-2 rounded-full text-xl font-bold"
+                className="inline-block rounded-full"
                 style={{ width: 50, height: 50, paddingTop: 10 }}
                 onClick={() => {
                   this.scroll(this.briefSectionRef);
                 }}
               >
-                &darr;
+                <img src={ArrowCircleIcon} className="mx-auto" />
               </button>
             </div>
           </div>
@@ -242,7 +267,7 @@ class HomePage extends Component {
             style={{ marginTop: 100, marginBottom: 100 }}
             className="grid grid-cols-1 items-center picture-separator-container"
           >
-            <div className="mx-auto picture-separator-section"></div>
+            <div className="mx-auto picture-separator-section" />
           </div>
           {/* ./Picture Separator Section */}
 
@@ -328,7 +353,7 @@ class HomePage extends Component {
             </div>
             {/* ./Left column */}
 
-            <div className="col-span-1"></div>
+            <div className="col-span-1" />
 
             {/* Right column */}
             <div className="flex items-left items-center col-span-5 p-5">
@@ -340,10 +365,13 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
                 </p>
 
-                <BorderedButton
-                  text={translate('BUTTONS.ACCEPT_CHALLENGE')}
-                  style={{ marginTop: 40 }}
-                />
+                <a href="#my-modal-2">
+                  <BorderedButton
+                    text={translate('BUTTONS.ACCEPT_CHALLENGE')}
+                    style={{ marginTop: 40 }}
+                    onClick={() => console.log('opened accept challenge modal')}
+                  />
+                </a>
               </div>
             </div>
             {/* ./Right column */}
@@ -373,43 +401,9 @@ class HomePage extends Component {
 
             {/* Right column */}
             <div className="flex contact-form-container">
-              <div className="form-control w-full max-w-xs">
-                {/* Name Input */}
-                <input
-                  type="text"
-                  placeholder={translate('INPUTS.YOUR_NAME')}
-                  className="input input-bordered w-full max-w-xs contact-input input-lg"
-                />
-                {/* ./Name Input */}
-
-                {/* Surname Input */}
-                <input
-                  type="text"
-                  style={{
-                    marginTop: 24,
-                    marginBottom: 24,
-                  }}
-                  placeholder={translate('INPUTS.YOUR_SURNAME')}
-                  className="input input-bordered w-full max-w-xs contact-input input-lg"
-                />
-                {/* ./Surname Input */}
-
-                {/* Email Input */}
-                <input
-                  type="email"
-                  placeholder={translate('INPUTS.YOUR_EMAIL')}
-                  className="input input-bordered w-full max-w-xs contact-input input-lg"
-                />
-                {/* ./Email Input */}
-                <BigColoredButton
-                  text={translate('BUTTONS.SEND_REQUEST')}
-                  style={{
-                    marginTop: 24,
-                    backgroundColor: '#fff',
-                    color: '#000',
-                  }}
-                />
-              </div>
+              {/** Mailchip Signup Form */}
+              <MailchimpForm />
+              {/** ./Mailchip Signup Form */}
             </div>
             {/* ./Right column */}
           </div>

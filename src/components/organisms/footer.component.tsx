@@ -13,30 +13,10 @@ export const FooterComponent = () => {
       </div>
 
       <div className="col-span-2">
-        <p className="text-lg">
-          <a
-            target="_blank"
-            href={ConditionsUrl.CookiesPolicy}
-            rel="noreferrer"
-          >
-            {translate('TEXT.COOKIES_POLICY')}
-          </a>
-        </p>
-      </div>
-
-      <div className="col-span-2">
-        <a target="_blank" href={ConditionsUrl.PrivacyPolicy} rel="noreferrer">
-          <p className="text-lg">{translate('TEXT.PRIVACY_POLICY')}</p>
+        <a target="_blank" rel="noreferrer" href={ConditionsUrl.TermsOfUse}>
+          <p className="text-lg">{translate('TEXT.TERMS')}</p>
         </a>
       </div>
-
-      <div className="col-span-2">
-        <a target="_blank" href={ConditionsUrl.TermsOfUse}>
-          <p className="text-lg">{translate('TEXT.TERMS_OF_USE')}</p>
-        </a>
-      </div>
-
-      <div className="col-span-3"></div>
     </div>
   );
 };

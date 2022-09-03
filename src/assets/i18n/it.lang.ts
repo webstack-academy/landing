@@ -7,11 +7,12 @@ export const it = {
       COURSE: 'Corso',
       ACCEPT_CHALLENGE: 'Accetta la sfida',
       SEND_REQUEST: 'Invia richieta',
+      SUBMIT: 'Invia',
     },
     TEXT: {
       HOME_SECTION_TITLE: 'Diventa uno sviluppatore web',
       ACADEMY_SUBSCRIBE:
-        'Partecipa alle nostre classi in diretta e impara dai migliori professionisti del settore ed entra nella più esclusiva community di programmatori.',
+        'Partecipa alle nostre classi in diretta, impara dai migliori professionisti del settore ed entra nella più esclusiva community di programmatori.',
       WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER:
         'Abbiamo creato un percorso per diventare',
       FULL_STACK_WEB_DEVELOPER: 'full-stack <br> web developer',
@@ -30,7 +31,7 @@ export const it = {
       VACANCIES:
         'Posti vacanti per sviluppatori in UE (135.000 solo in Italia)',
       AVERAGE_SALARY:
-        'Stipendio medio di uno sviluppatore in Italia. 60.000 in Germania, 65.000 € in UK e 90.000 € in Svizzera',
+        'Stipendio medio di uno sviluppatore in Italia. 60.000 € in Germania, 65.000 € in UK e 90.000 € in Svizzera',
       PERCENTAGE_DEVS_USING_JS:
         'Degli sviluppatori ha usato Javascript negli ultimi 12 mesi',
       BECOME_PRO: 'Accetta la sfida e diventa un PRO',
@@ -39,11 +40,12 @@ export const it = {
       NEED_MORE_INFO: 'Hai bisogno di più informazioni?',
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
-        'Compila il form per richiedere magiori informazioni, ti risponderemo il prima possibile.',
+        'Compila il form e fissa una call, saremo super lieti di rispondere a qualsiasi tuo dubbio 😎.',
       COPYRIGHT: 'Copyright © 2020 Webstack Academy.',
       COOKIES_POLICY: 'Cookie Policy',
       PRIVACY_POLICY: 'Privacy Policy',
       TERMS_OF_USE: 'Termini e condizioni',
+      TERMS: 'Terms',
       COMMUNITY: 'Community',
       COMMUNITY_MENTORS_STUDENTS:
         'Una vasta community di studenti e mentor con cui confrontarsi',
@@ -56,11 +58,14 @@ export const it = {
       INDIVIDUAL_LESSONS: 'Lezioni individuali',
       INDIVIDUAL_LESSONS_DESCRIPTION:
         'Lezioni individuali con ogni studente per la preparazione ai colloqui tecnici',
+      SIGN_FORM_ERROR:
+        "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',
       YOUR_SURNAME: 'Il tuo cognome',
       YOUR_EMAIL: 'La tua E-mail',
+      YOUR_PHONE: 'Il tuo numero di telefono',
     },
   },
 };

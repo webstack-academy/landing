@@ -8,7 +8,7 @@ export const BorderedButton = (props: {
 }) => {
   return (
     <button
-      onClick={() => props.onClick()}
+      onClick={() => props?.onClick()}
       className="btn btn-black contact-btn"
       style={props.style}
     >
@@ -20,9 +20,15 @@ export const BorderedButton = (props: {
 export const BigColoredButton = (props: {
   text: string;
   style?: CSSProperties;
+  className?: string;
+  onClick?: () => void;
 }) => {
   return (
-    <button className="btn btn-lg" style={{ borderRadius: 8, ...props.style }}>
+    <button
+      onClick={() => props?.onClick()}
+      className={`btn btn-lg ${props?.className}`}
+      style={{ borderRadius: 8, ...props.style }}
+    >
       {translate(props.text)}
     </button>
   );
