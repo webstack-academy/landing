@@ -7,6 +7,7 @@ interface NavbarProps {
   academyCallback: () => void;
   courseCallback: () => void;
   whyCallback: () => void;
+  pricingCallback: () => void;
 }
 
 class Navbar extends Component<NavbarProps, any> {
@@ -32,6 +33,7 @@ class Navbar extends Component<NavbarProps, any> {
         className={`navbar bg-base-100 text-white sticky top-0 ${
           this.state.scrolled ? 'border-b' : ''
         }`}
+        style={{ zIndex: 99 }}
       >
         <div className="navbar-start">
           <div className="dropdown">
@@ -82,6 +84,15 @@ class Navbar extends Component<NavbarProps, any> {
                   {translate('BUTTONS.WHY')}?
                 </a>
               </li>
+
+              {/**
+               * Pricing Button
+               */}
+              <li>
+                <a onClick={() => this.props.pricingCallback()}>
+                  {translate('BUTTONS.PRICING')}
+                </a>
+              </li>
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">WebStack</a>
@@ -112,6 +123,15 @@ class Navbar extends Component<NavbarProps, any> {
             <li>
               <a onClick={() => this.props.whyCallback()}>
                 {translate('BUTTONS.WHY')}?
+              </a>
+            </li>
+
+            {/**
+             * Pricing Button
+             */}
+            <li>
+              <a onClick={() => this.props.pricingCallback()}>
+                {translate('BUTTONS.PRICING')}
               </a>
             </li>
           </ul>

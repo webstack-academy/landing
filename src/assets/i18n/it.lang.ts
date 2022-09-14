@@ -8,6 +8,7 @@ export const it = {
       ACCEPT_CHALLENGE: 'Accetta la sfida',
       SEND_REQUEST: 'Invia richieta',
       SUBMIT: 'Invia',
+      PRICING: 'Prezzi',
     },
     TEXT: {
       HOME_SECTION_TITLE: 'Diventa uno sviluppatore web',

@@ -22,12 +22,14 @@ import { Trans } from 'react-i18next';
 import { FooterComponent } from '../../../components/organisms/footer.component';
 import Navbar from '../../../components/molecules/navbar.component';
 import { MailchimpForm } from '../../../components/organisms/mailchip-form.component';
+import { PriceColumnsComponent } from '../../../components/molecules/price-columns.component';
 
 class HomePage extends Component {
   private briefSectionRef = React.createRef();
   private marketRequirementsSectionRef = React.createRef();
   private contactSectionRef = React.createRef();
   private accessSectionRef = React.createRef();
+  private pricingSectionRef = React.createRef();
 
   private scroll(ref) {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -61,6 +63,7 @@ class HomePage extends Component {
           whyCallback={() => this.scroll(this.marketRequirementsSectionRef)}
           courseCallback={() => this.scroll(this.accessSectionRef)}
           academyCallback={() => this.scroll(this.briefSectionRef)}
+          pricingCallback={() => this.scroll(this.pricingSectionRef)}
         />
         <div className="md:container mx-auto page-container">
           {/* Header Section */}
@@ -377,6 +380,15 @@ class HomePage extends Component {
             {/* ./Right column */}
           </div>
           {/* ./Remaining Seats Section */}
+
+          {/* Prices Section */}
+          <div
+            style={{ marginTop: 200, marginBottom: 200 }}
+            ref={this.pricingSectionRef}
+          >
+            <PriceColumnsComponent />
+          </div>
+          {/* ./Prices Section */}
 
           {/* Contact Usa Section */}
           <div

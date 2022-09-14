@@ -180,6 +180,11 @@ p {
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .price-column-container {
+    justify-self: center!important;
+    margin-top: 10px;
+  }
 }
 
 /* Override Daisy Css */
