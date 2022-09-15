@@ -2,7 +2,7 @@ export const it = {
   translation: {
     BUTTONS: {
       CONTACT_US: 'Contattaci',
-      ACADEMY: 'Academia',
+      ACADEMY: 'Accademia',
       WHY: 'Perché',
       COURSE: 'Corso',
       ACCEPT_CHALLENGE: 'Accetta la sfida',
@@ -61,6 +61,11 @@ export const it = {
         'Lezioni individuali con ogni studente per la preparazione ai colloqui tecnici',
       SIGN_FORM_ERROR:
         "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
+      MENTORS: 'Mentors',
+      OSTAP_DESCRIPTION:
+        'Lead Developer e CyberSecurity expert<br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
+      ALDO_DESCRIPTION:
+        'Digital Products Maker, ex Wefox Product Manager. <br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto. Il mio approccio allo sviluppo del software combina la ricerca della pulizia e della manutenibilità del codice con una particolare attenzione alla sicurezza.',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',

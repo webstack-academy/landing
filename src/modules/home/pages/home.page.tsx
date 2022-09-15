@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { translate } from '../../../common/helpers/i18n/i18n.helper';
 import {
+  AldoImage,
   DescriptionSectionImage,
   HomeSectionImage,
+  OstapImage,
 } from '../../../assets/images';
 import {
   ArrowCircleIcon,
@@ -383,12 +385,56 @@ class HomePage extends Component {
 
           {/* Prices Section */}
           <div
-            style={{ marginTop: 200, marginBottom: 200 }}
+            style={{ paddingTop: 150, paddingBottom: 150 }}
             ref={this.pricingSectionRef}
           >
             <PriceColumnsComponent />
           </div>
           {/* ./Prices Section */}
+
+          {/* Mentors Section */}
+
+          <h1 className="text-4xl text-center">{translate('TEXT.MENTORS')}</h1>
+
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
+            style={{ marginBottom: 100 }}
+          >
+            {/* Left column */}
+            <div className="flex items-center p-5">
+              <div className="text-center">
+                <div className="avatar">
+                  <div className="w-24 rounded-full">
+                    <img src={OstapImage} />
+                  </div>
+                </div>
+
+                <h1 className="text-3xl">Ostap</h1>
+                <p className="text-lg mt-2">
+                  <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
+                </p>
+              </div>
+            </div>
+            {/* ./Left column */}
+
+            {/* Right column */}
+            <div className="flex items-center p-5">
+              <div className="text-center">
+                <div className="avatar">
+                  <div className="w-24 rounded-full">
+                    <img src={AldoImage} />
+                  </div>
+                </div>
+
+                <h1 className="text-3xl">Aldo</h1>
+                <p className="text-lg mt-2">
+                  <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
+                </p>
+              </div>
+            </div>
+            {/* ./Right column */}
+          </div>
+          {/* ./Mentors Section */}
 
           {/* Contact Usa Section */}
           <div
