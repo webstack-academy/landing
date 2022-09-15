@@ -81,7 +81,20 @@ export const PriceColumnsComponent = () => {
                 >
                   <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
-                <span>Migliori strumenti per lo sviluppo web</span>
+                <span>Migliori strumenti per lo sviluppo web.</span>
+              </li>
+              <li className="flex items-center">
+                <svg
+                  className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                </svg>
+                <span>
+                  Lezioni individuali per la preparazione ai colloqui tecnici{' '}
+                  <b>in qualsiasi momento</b>.
+                </span>
               </li>
             </ul>
           </div>
@@ -158,6 +171,20 @@ export const PriceColumnsComponent = () => {
                 <span>
                   Accesso all' intera piattaforma compresi materiale e lezioni
                   extra solo dopo aver pagato le rate.
+                </span>
+              </li>
+
+              <li className="flex items-center">
+                <svg
+                  className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                </svg>
+                <span>
+                  Lezioni individuali per la preparazione ai colloqui tecnici
+                  <b> soltanto a fine corso</b>.
                 </span>
               </li>
             </ul>

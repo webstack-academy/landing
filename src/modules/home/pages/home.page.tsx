@@ -16,10 +16,7 @@ import {
   MoneyIcon,
   StreamingIcon,
 } from '../../../assets/icons';
-import {
-  BigColoredButton,
-  BorderedButton,
-} from '../../../components/atoms/button.component';
+import { BorderedButton } from '../../../components/atoms/button.component';
 import { Trans } from 'react-i18next';
 import { FooterComponent } from '../../../components/organisms/footer.component';
 import Navbar from '../../../components/molecules/navbar.component';
@@ -117,7 +114,7 @@ class HomePage extends Component {
           {/* Brief Section */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-            style={{ marginTop: 100 }}
+            style={{ paddingTop: 100 }}
             ref={this.briefSectionRef}
           >
             {/* Left column */}
@@ -152,7 +149,7 @@ class HomePage extends Component {
           {/* Description Section */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-            style={{ marginTop: 200 }}
+            style={{ paddingTop: 200 }}
             ref={this.accessSectionRef}
           >
             {/* Left column */}

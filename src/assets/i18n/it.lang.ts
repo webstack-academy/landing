@@ -65,7 +65,7 @@ export const it = {
       OSTAP_DESCRIPTION:
         'Lead Developer e CyberSecurity expert<br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
       ALDO_DESCRIPTION:
-        'Digital Products Maker, ex Wefox Product Manager. <br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto. Il mio approccio allo sviluppo del software combina la ricerca della pulizia e della manutenibilità del codice con una particolare attenzione alla sicurezza.',
+        'Digital Products Maker, ex Wefox Product Manager <br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',
