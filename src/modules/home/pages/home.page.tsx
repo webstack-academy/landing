@@ -410,6 +410,14 @@ class HomePage extends Component {
                 <p className="text-lg mt-2">
                   <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
                 </p>
+                <a
+                  href="https://www.linkedin.com/in/ostap-markin-505441173/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  linkedin
+                </a>
               </div>
             </div>
             {/* ./Left column */}
@@ -427,6 +435,14 @@ class HomePage extends Component {
                 <p className="text-lg mt-2">
                   <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
                 </p>
+                <a
+                  href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  linkedin
+                </a>
               </div>
             </div>
             {/* ./Right column */}
