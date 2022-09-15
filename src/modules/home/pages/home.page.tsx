@@ -97,7 +97,7 @@ class HomePage extends Component {
               {/* ./Right column */}
             </div>
 
-            <div className="text-center" style={{ marginTop: 100 }}>
+            <div className="text-center" style={{ marginTop: 65 }}>
               <button
                 className="inline-block rounded-full"
                 style={{ width: 50, height: 50, paddingTop: 10 }}
