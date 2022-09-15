@@ -25,7 +25,7 @@ export const it = {
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
       COURSE_DESCRIPTION:
-        'Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full -stack developer.',
+        'In particolare, il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full -stack developer.',
       START_NOW: 'Inizia ora su Webstack Academy',
       WILL_ACCESS_TO: 'Avrai accesso a:',
       MARKET_REQUIREMENTS: 'Necessità di mercato',
