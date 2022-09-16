@@ -100,7 +100,7 @@ class HomePage extends Component {
             <div className="text-center" style={{ marginTop: 65 }}>
               <button
                 className="inline-block rounded-full"
-                style={{ width: 50, height: 50, paddingTop: 10 }}
+                style={{ width: 50, height: 50, marginTop: 10, paddingBottom: 50 }}
                 onClick={() => {
                   this.scroll(this.briefSectionRef);
                 }}
