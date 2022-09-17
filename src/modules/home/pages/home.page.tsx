@@ -327,7 +327,7 @@ class HomePage extends Component {
                   >
                     70%
                   </h2>
-                  <p className="text-lg">{translate('TEXT.VACANCIES')}</p>
+                  <p className="text-lg">{translate('TEXT.PERCENTAGE_DEVS_USING_JS')}</p>
                 </div>
               </div>
               {/* ./Vacancies Column */}
