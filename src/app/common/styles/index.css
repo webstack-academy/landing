@@ -113,7 +113,7 @@ p {
 }
 
 .picture-separator-section {
-  background-image: url("../../assets/images/programming.jpeg");
+  background-image: url("../../../assets/images/programming.jpeg");
   height: 406px;
   width: 100%;
   background-size: cover;
@@ -143,6 +143,11 @@ p {
 .contact-description-container {
   justify-content: flex-start!important;
   padding: 20px;
+}
+
+.cookies-container {
+  -webkit-box-shadow: 5px 5px 25px 5px rgba(255,255,255,0.22);
+  box-shadow: 5px 5px 25px 5px rgba(255,255,255,0.22);
 }
 
 /* MediaQuery */

@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { it } from '../../../assets/i18n/it.lang';
+import { it } from '../../../../assets/i18n/it.lang';
 
 const resources = { it };
 

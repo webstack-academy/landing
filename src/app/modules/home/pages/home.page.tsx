@@ -5,7 +5,7 @@ import {
   DescriptionSectionImage,
   HomeSectionImage,
   OstapImage,
-} from '../../../assets/images';
+} from '../../../../assets/images';
 import {
   ArrowCircleIcon,
   CommunityIcon,
@@ -15,7 +15,7 @@ import {
   IndividualIcon,
   MoneyIcon,
   StreamingIcon,
-} from '../../../assets/icons';
+} from '../../../../assets/icons';
 import { BorderedButton } from '../../../components/atoms/button.component';
 import { Trans } from 'react-i18next';
 import { FooterComponent } from '../../../components/organisms/footer.component';
@@ -44,7 +44,7 @@ class HomePage extends Component {
         <div className="modal" id="my-modal-2">
           <div className="modal-box">
             <a
-              href="#"
+              href="src/app/modules/home/pages/home.page#"
               className="btn btn-sm btn-circle absolute right-2 top-2"
             >
               ✕
@@ -80,7 +80,7 @@ class HomePage extends Component {
                   {translate('TEXT.ACADEMY_SUBSCRIBE')}
                 </p>
 
-                <a href="#my-modal-2">
+                <a href="src/app/modules/home/pages/home.page#my-modal-2">
                   <BorderedButton
                     text={translate('BUTTONS.ACCEPT_CHALLENGE')}
                     style={{ marginTop: 40 }}
@@ -100,7 +100,12 @@ class HomePage extends Component {
             <div className="text-center" style={{ marginTop: 65 }}>
               <button
                 className="inline-block rounded-full"
-                style={{ width: 50, height: 50, marginTop: 10, paddingBottom: 50 }}
+                style={{
+                  width: 50,
+                  height: 50,
+                  marginTop: 10,
+                  paddingBottom: 50,
+                }}
                 onClick={() => {
                   this.scroll(this.briefSectionRef);
                 }}
@@ -327,7 +332,9 @@ class HomePage extends Component {
                   >
                     70%
                   </h2>
-                  <p className="text-lg">{translate('TEXT.PERCENTAGE_DEVS_USING_JS')}</p>
+                  <p className="text-lg">
+                    {translate('TEXT.PERCENTAGE_DEVS_USING_JS')}
+                  </p>
                 </div>
               </div>
               {/* ./Vacancies Column */}
@@ -367,7 +374,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
                 </p>
 
-                <a href="#my-modal-2">
+                <a href="src/app/modules/home/pages/home.page#my-modal-2">
                   <BorderedButton
                     text={translate('BUTTONS.ACCEPT_CHALLENGE')}
                     style={{ marginTop: 40 }}
@@ -411,7 +418,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/ostap-markin-505441173/"
+                  href="src/app/modules/home/pages/home.page"
                   target="_blank"
                   rel="noreferrer"
                   className="underline"
@@ -436,7 +443,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
+                  href="src/app/modules/home/pages/home.page"
                   target="_blank"
                   rel="noreferrer"
                   className="underline"
