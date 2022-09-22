@@ -44,7 +44,7 @@ class HomePage extends Component {
         <div className="modal" id="my-modal-2">
           <div className="modal-box">
             <a
-              href="src/app/modules/home/pages/home.page#"
+              href="#"
               className="btn btn-sm btn-circle absolute right-2 top-2"
             >
               ✕
@@ -80,7 +80,7 @@ class HomePage extends Component {
                   {translate('TEXT.ACADEMY_SUBSCRIBE')}
                 </p>
 
-                <a href="src/app/modules/home/pages/home.page#my-modal-2">
+                <a href="#my-modal-2">
                   <BorderedButton
                     text={translate('BUTTONS.ACCEPT_CHALLENGE')}
                     style={{ marginTop: 40 }}
@@ -374,7 +374,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
                 </p>
 
-                <a href="src/app/modules/home/pages/home.page#my-modal-2">
+                <a href="#my-modal-2">
                   <BorderedButton
                     text={translate('BUTTONS.ACCEPT_CHALLENGE')}
                     style={{ marginTop: 40 }}
@@ -418,7 +418,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
                 </p>
                 <a
-                  href="src/app/modules/home/pages/home.page"
+                  href="https://www.linkedin.com/in/ostap-markin-505441173/"
                   target="_blank"
                   rel="noreferrer"
                   className="underline"
@@ -443,7 +443,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
                 </p>
                 <a
-                  href="src/app/modules/home/pages/home.page"
+                  href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
                   target="_blank"
                   rel="noreferrer"
                   className="underline"
@@ -470,7 +470,16 @@ class HomePage extends Component {
                   </h1>
                   <h1 className="text-4xl">{translate('TEXT.CONTACT_US')}</h1>
                   <p className="text-lg mt-5">
-                    <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" /> <a className="underline" target="_blank" rel="noreferrer" href="https://wa.me/message/7NRXN4H546I5M1">WhatsApp</a>.
+                    <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" />{' '}
+                    <a
+                      className="underline"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://wa.me/message/7NRXN4H546I5M1"
+                    >
+                      WhatsApp
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
