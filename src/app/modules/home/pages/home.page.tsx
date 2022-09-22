@@ -470,7 +470,7 @@ class HomePage extends Component {
                   </h1>
                   <h1 className="text-4xl">{translate('TEXT.CONTACT_US')}</h1>
                   <p className="text-lg mt-5">
-                    {translate('TEXT.COMPILE_FORM_GET_INFO')}
+                    <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" /> <a className="underline" target="_blank" rel="noreferrer" href="https://wa.me/message/7NRXN4H546I5M1">WhatsApp</a>.
                   </p>
                 </div>
               </div>
