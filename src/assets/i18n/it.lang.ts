@@ -32,7 +32,7 @@ export const it = {
       VACANCIES:
         'Posti vacanti per sviluppatori in UE (135.000 solo in Italia)',
       AVERAGE_SALARY:
-        'Stipendio medio di uno sviluppatore in Italia. 60.000 € in Germania, 65.000 € in UK e 90.000 € in Svizzera',
+        'Stipendio medio annuale di uno sviluppatore in Italia. 60.000 € in Germania, 65.000 € in UK e 90.000 € in Svizzera',
       PERCENTAGE_DEVS_USING_JS:
         'Degli sviluppatori ha usato Javascript negli ultimi 12 mesi',
       BECOME_PRO: 'Accetta la sfida e diventa un PRO',
