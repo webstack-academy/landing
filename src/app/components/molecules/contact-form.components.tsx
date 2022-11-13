@@ -8,16 +8,14 @@ export type FormPosition = 'center' | 'right';
 
 interface ContractFormProps {
   status?: string;
-  message?: string;
-  onValidated?: (data: any) => void;
   position?: FormPosition;
+  callback: (params: Record<any, any>) => void;
 }
 
 export const ContactForm = ({
   status,
-  message,
-  onValidated,
   position,
+  callback,
 }: ContractFormProps) => {
   let email;
   let name;
@@ -26,7 +24,8 @@ export const ContactForm = ({
 
   const submit = () => {
     if (status !== 'sending') {
-      return onValidated({
+      // eslint-disable-next-line n/no-callback-literal
+      callback({
         EMAIL: email.value,
         FNAME: name.value,
         LNAME: lastName.value,
@@ -35,11 +34,11 @@ export const ContactForm = ({
     }
   };
 
-  useEffect(() => {
-    if (status === 'success') {
-      window.location.href = ContactsUrl.Calendly;
-    }
-  });
+  // useEffect(() => {
+  //   if (status === 'success' && !sponsorRef) {
+  //     window.location.href = ContactsUrl.Calendly;
+  //   }
+  // });
 
   return (
     <div

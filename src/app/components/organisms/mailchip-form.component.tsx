@@ -18,7 +18,7 @@ export const MailchimpForm = (props: { formPosition?: FormPosition }) => (
         status={status}
         message={message}
         position={props?.formPosition}
-        onValidated={subscribe}
+        callback={subscribe}
       />
     )}
   />
