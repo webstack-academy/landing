@@ -9,6 +9,7 @@ export const it = {
       SEND_REQUEST: 'Invia richieta',
       SUBMIT: 'Invia',
       PRICING: 'Prezzi',
+      START_NOW: 'Inizia ora',
     },
     TEXT: {
       HOME_SECTION_TITLE: 'Diventa uno sviluppatore web',
@@ -21,11 +22,12 @@ export const it = {
       OUR_ACADEMY: 'La nostra Academy',
       OUR_ACADEMY_DESCRIPTION:
         'Il corso si svolgerà nelle <strong>ore serali</strong> per permettere a tutti, compresi i lavoratori e studenti impegnati durante la giornata, di seguire comodamente le classi <strong>in diretta</strong>. <br /><br />Tutti gli studenti avranno accesso a vita alle classi e alla nostra community, dove potranno trovare contenuti aggiuntivi, ottenere <strong>supporto</strong> e fare <strong>networking</strong>.',
-      COURSE_DESCRIPTION_TITLE: 'Descrizione del corso',
+      COURSE_DESCRIPTION_TITLE: 'Corso serale che ti cambierà la vita',
+      WEBSTACK_ACADEMY_FUTURE_HERE: 'Webstack Academy - il futuro è qui',
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
       COURSE_DESCRIPTION:
-        'In particolare, il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full -stack developer.',
+        'Il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full -stack developer.',
       START_NOW: 'Inizia ora su Webstack Academy',
       WILL_ACCESS_TO: 'Avrai accesso a:',
       MARKET_REQUIREMENTS: 'Necessità di mercato',
@@ -63,9 +65,10 @@ export const it = {
         "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
       MENTORS: 'Mentors',
       OSTAP_DESCRIPTION:
-        'Lead Developer e CyberSecurity expert<br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
+        'Lead Developer e CyberSecurity expert<br><br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
       ALDO_DESCRIPTION:
-        'Digital Products Maker, ex Wefox Product Manager <br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
+        'Digital Products Maker, ex Wefox Product Manager <br><br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
+      FULL_STACK_DEV_4_MONTHS: 'Full Stack Developer, in 4 mesi',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',

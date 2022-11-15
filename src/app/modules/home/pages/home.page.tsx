@@ -13,7 +13,9 @@ import {
   FlagIcon,
   FolderIcon,
   IndividualIcon,
+  LinkedinIcon,
   MoneyIcon,
+  SmallLogo,
   StreamingIcon,
 } from '../../../../assets/icons';
 import { BorderedButton } from '../../../components/atoms/button.component';
@@ -37,7 +39,6 @@ class HomePage extends Component {
   private showHide;
 
   render() {
-    // @ts-ignore
     return (
       <div>
         {/** Accept Challenge Modal */}
@@ -68,86 +69,61 @@ class HomePage extends Component {
           {/* Header Section */}
           <div
             style={{ minHeight: '100vh' }}
-            className="grid grid-cols-1 content-center justify-content-center"
+            className="grid grid-cols-1 content-center justify-content-center text-center"
           >
-            <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12">
-              {/* Left column */}
-              <div className="col-span-5 p-5">
-                <h1 className="header-title font-semibold">
-                  {translate('TEXT.HOME_SECTION_TITLE')}
-                </h1>
-                <p className="text-lg mt-2">
-                  {translate('TEXT.ACADEMY_SUBSCRIBE')}
-                </p>
-
-                <a href="#my-modal-2">
-                  <BorderedButton
-                    text={translate('BUTTONS.ACCEPT_CHALLENGE')}
-                    style={{ marginTop: 40 }}
-                    onClick={() => console.log('opened accept challenge modal')}
-                  />
-                </a>
-              </div>
-              {/* ./Left column */}
-
-              {/* Right column */}
-              <div className="col-span-7">
-                <img src={HomeSectionImage} />
-              </div>
-              {/* ./Right column */}
-            </div>
-
-            <div className="text-center" style={{ marginTop: 65 }}>
-              <button
-                className="inline-block rounded-full"
-                style={{
-                  width: 50,
-                  height: 50,
-                  marginTop: 10,
-                  paddingBottom: 50,
-                }}
-                onClick={() => {
-                  this.scroll(this.briefSectionRef);
-                }}
+            {/* Header Description */}
+            <div className="grid grid-cols-1">
+              <h1 className="header-title font-semibold">
+                {translate('TEXT.HOME_SECTION_TITLE')}
+              </h1>
+              <p
+                className="text-lg mt-2 header-subtitle"
+                style={{ marginLeft: '20%', marginRight: '20%' }}
               >
-                <img src={ArrowCircleIcon} className="mx-auto" />
-              </button>
+                {translate('TEXT.ACADEMY_SUBSCRIBE')}
+              </p>
+
+              <a href="#my-modal-2">
+                <BorderedButton
+                  text={translate('BUTTONS.START_NOW')}
+                  style={{ marginTop: 40 }}
+                  onClick={() => console.log('opened accept challenge modal')}
+                />
+              </a>
             </div>
+            {/* ./Header Description */}
+
+            {/* Header Picture */}
+            <div className="grid grid-cols-1 content-center">
+              <img src={HomeSectionImage} className="mx-auto" />
+            </div>
+            {/* ./Header Picture */}
           </div>
           {/* Header Section */}
 
           {/* Brief Section */}
           <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
+            className="grid grid-cols-1 "
             style={{ paddingTop: 100 }}
             ref={this.briefSectionRef}
           >
-            {/* Left column */}
-            <div className="linear-gradient-border column-container flex items-center	">
-              <div>
-                <h1 className="text-4xl">
-                  {translate('TEXT.WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER')}
-                </h1>
-                <h1 className="text-5xl font-semibold mt-4">
-                  <Trans i18nKey="TEXT.FULL_STACK_WEB_DEVELOPER" />
-                </h1>
-                <h1 className="text-4xl mt-4">
-                  {translate('TEXT.FOUR_MONTHS')}
-                </h1>
-              </div>
-            </div>
-            {/* ./Left column */}
-
-            {/* Right column */}
-            <div className="column-container flex items-left">
+            <div className="linear-gradient-border column-container flex items-left p-12">
               <div className="text-left">
-                <h1 className="text-4xl">{translate('TEXT.OUR_ACADEMY')}</h1>
-                <p className="text-lg">
+                <h1 className="text-2xl">{translate('TEXT.OUR_ACADEMY')}</h1>
+                <h2 className="text-3xl mt-4">
+                  {translate('TEXT.FULL_STACK_DEV_4_MONTHS')}
+                </h2>
+                <p className="text-xl mt-4">
                   <Trans i18nKey="TEXT.OUR_ACADEMY_DESCRIPTION" />
                 </p>
+
+                <BorderedButton
+                  text={translate('BUTTONS.START_NOW')}
+                  style={{ marginTop: 40 }}
+                  onClick={() => console.log('opened accept challenge modal')}
+                />
               </div>
             </div>
-            {/* ./Right column */}
           </div>
           {/* ./Brief Section */}
 
@@ -158,29 +134,103 @@ class HomePage extends Component {
             ref={this.accessSectionRef}
           >
             {/* Left column */}
-            <div>
-              <img src={DescriptionSectionImage} />
-            </div>
-            {/* ./Left column */}
 
-            {/* Right column */}
             <div className="flex items-left items-center p-5">
               <div className="text-left">
+                <img src={SmallLogo} />
+                <h2 className="text-2xl mt-2">
+                  {translate('TEXT.WEBSTACK_ACADEMY_FUTURE_HERE')}
+                </h2>
+
                 <h1 className="text-4xl">
                   {translate('TEXT.COURSE_DESCRIPTION_TITLE')}
                 </h1>
 
-                <h2 className="text-2xl mt-2">
-                  {translate('TEXT.COURSE_SUBTITLE')}
-                </h2>
                 <p className="text-lg mt-2">
                   <Trans i18nKey="TEXT.COURSE_DESCRIPTION" />
                 </p>
               </div>
             </div>
+            {/* ./Left column */}
+
+            {/* Right column */}
+
+            <div>
+              <img src={DescriptionSectionImage} />
+            </div>
             {/* ./Right column */}
           </div>
           {/* ./Description Section */}
+
+          {/* Mentors Section */}
+
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
+            style={{ marginBottom: 100 }}
+          >
+            {/* Left column */}
+            <div className="flex p-5">
+              <div className="text-left">
+                <h1 className="text-lg text-base-content">
+                  Webstack Academy Team
+                </h1>
+                <h1 className="text-4xl">{translate('TEXT.MENTORS')}</h1>
+
+                <BorderedButton
+                  text={translate('BUTTONS.START_NOW')}
+                  style={{ marginTop: 40 }}
+                  onClick={() => console.log('opened accept challenge modal')}
+                />
+              </div>
+            </div>
+            {/* ./Left column */}
+
+            {/* Right column */}
+            <div className="gird items-center p-5">
+              <div className="card card-side linear-gradient-border green-background rounded-xl">
+                <figure>
+                  <img src={OstapImage} alt="Ostap" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Ostap Markin</h2>
+                  <p>
+                    <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
+                  </p>
+                  <a
+                    href="https://www.linkedin.com/in/ostap-markin-505441173/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={LinkedinIcon} />
+                  </a>
+                </div>
+              </div>
+
+              <div
+                className="card card-side linear-gradient-border green-background rounded-xl"
+                style={{ marginTop: 50 }}
+              >
+                <figure>
+                  <img src={AldoImage} alt="Aldo" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Aldo Vincenti</h2>
+                  <p>
+                    <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
+                  </p>
+                  <a
+                    href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={LinkedinIcon} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* ./Right column */}
+          </div>
+          {/* ./Mentors Section */}
 
           {/* Access Section */}
           <div
@@ -395,66 +445,6 @@ class HomePage extends Component {
             <PriceColumnsComponent />
           </div>
           {/* ./Prices Section */}
-
-          {/* Mentors Section */}
-
-          <h1 className="text-4xl text-center">{translate('TEXT.MENTORS')}</h1>
-
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-            style={{ marginBottom: 100 }}
-          >
-            {/* Left column */}
-            <div className="flex items-center p-5">
-              <div className="text-center">
-                <div className="avatar">
-                  <div className="w-24 rounded-full">
-                    <img src={OstapImage} />
-                  </div>
-                </div>
-
-                <h1 className="text-3xl">Ostap</h1>
-                <p className="text-lg mt-2">
-                  <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/ostap-markin-505441173/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline"
-                >
-                  linkedin
-                </a>
-              </div>
-            </div>
-            {/* ./Left column */}
-
-            {/* Right column */}
-            <div className="flex items-center p-5">
-              <div className="text-center">
-                <div className="avatar">
-                  <div className="w-24 rounded-full">
-                    <img src={AldoImage} />
-                  </div>
-                </div>
-
-                <h1 className="text-3xl">Aldo</h1>
-                <p className="text-lg mt-2">
-                  <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline"
-                >
-                  linkedin
-                </a>
-              </div>
-            </div>
-            {/* ./Right column */}
-          </div>
-          {/* ./Mentors Section */}
 
           {/* Contact Usa Section */}
           <div

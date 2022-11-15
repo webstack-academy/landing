@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { translate } from '../../common/helpers/i18n/i18n.helper';
 import { BorderedButton } from '../atoms/button.component';
+import { IndividualIcon, Logo } from '../../../assets/icons';
 
 interface NavbarProps {
   contactsCallback: () => void;
@@ -95,7 +96,9 @@ class Navbar extends Component<NavbarProps, any> {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">WebStack</a>
+          <a className="btn btn-ghost normal-case text-xl">
+            <img src={Logo} className="mx-auto" />
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -134,15 +137,12 @@ class Navbar extends Component<NavbarProps, any> {
                 {translate('BUTTONS.PRICING')}
               </a>
             </li>
+            <li>
+              <a onClick={() => this.props.contactsCallback()}>
+                {translate('BUTTONS.CONTACT_US')}
+              </a>
+            </li>
           </ul>
-        </div>
-
-        {/** Contact Us Button */}
-        <div className="navbar-end">
-          <BorderedButton
-            onClick={() => this.props.contactsCallback()}
-            text={translate('BUTTONS.CONTACT_US')}
-          />
         </div>
         {/** ./Contact Us Button */}
       </div>

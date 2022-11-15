@@ -9,7 +9,7 @@ export const BorderedButton = (props: {
   return (
     <button
       onClick={() => props?.onClick()}
-      className="btn btn-black contact-btn"
+      className="btn btn-lg contact-btn"
       style={props.style}
     >
       {translate(props.text)}
