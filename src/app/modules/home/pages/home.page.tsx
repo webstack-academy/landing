@@ -350,7 +350,7 @@ class HomePage extends Component {
                     className="text-4xl font-semibold"
                     style={{ marginTop: 30, marginBottom: 30 }}
                   >
-                    +500.000
+                    + 500.000
                   </h2>
                   <p className="text-lg">{translate('TEXT.VACANCIES')}</p>
                 </div>
@@ -365,7 +365,7 @@ class HomePage extends Component {
                     className="text-4xl font-semibold"
                     style={{ marginTop: 30, marginBottom: 30 }}
                   >
-                    35.000
+                    35.000 €
                   </h2>
                   <p className="text-lg">{translate('TEXT.AVERAGE_SALARY')}</p>
                 </div>
@@ -380,7 +380,7 @@ class HomePage extends Component {
                     className="text-4xl font-semibold"
                     style={{ marginTop: 30, marginBottom: 30 }}
                   >
-                    70%
+                    70 %
                   </h2>
                   <p className="text-lg">
                     {translate('TEXT.PERCENTAGE_DEVS_USING_JS')}
