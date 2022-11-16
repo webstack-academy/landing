@@ -175,7 +175,10 @@ class HomePage extends Component {
                   Webstack Academy Team
                 </h1>
                 <h1 className="text-4xl">{translate('TEXT.MENTORS')}</h1>
-
+                <p className="text-xl mt-2 py-5 pr-5">
+                  Professionisti del settore con anni di esperienza che ti
+                  guideranno durante tutto il percorso.
+                </p>
                 <BorderedButton
                   text={translate('BUTTONS.START_NOW')}
                   style={{ marginTop: 40 }}
@@ -186,7 +189,7 @@ class HomePage extends Component {
             {/* ./Left column */}
 
             {/* Right column */}
-            <div className="gird items-center p-5">
+            <div className="gird items-center p-5 ">
               <div className="card card-side linear-gradient-border green-background rounded-xl">
                 <figure>
                   <img src={OstapImage} alt="Ostap" />
@@ -319,15 +322,6 @@ class HomePage extends Component {
           </div>
           {/* ./Access Section */}
 
-          {/* Picture Separator Section */}
-          <div
-            style={{ marginTop: 100, marginBottom: 100 }}
-            className="grid grid-cols-1 items-center picture-separator-container"
-          >
-            <div className="mx-auto picture-separator-section" />
-          </div>
-          {/* ./Picture Separator Section */}
-
           {/* Market Requirements Section */}
           <div
             style={{ marginTop: 100, marginBottom: 100 }}
@@ -393,47 +387,29 @@ class HomePage extends Component {
           {/* ./Market Requirements Section */}
 
           {/* Remaining Seats Section */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12"
-            style={{ marginTop: 100, marginBottom: 100 }}
-          >
-            {/* Left column */}
-            <div
-              className="grid grid-cols-2 col-span-6 justify-items-center"
-              style={{ marginTop: 50 }}
-            >
-              <div className="column-container remaining-seats-column flex items-center justify-center">
-                <p>1</p>
-              </div>
+          <div className="grid grid-cols-1" style={{ marginTop: 100 }}>
+            <div className="items-center text-center p-5">
+              <div className="md:mx-[100px] lg:mx-[200px] xl:mx-[200px] 2xl:mx-[200px]">
+                <div
+                  className="rounded-full linear-gradient-border flex justify-center items-center grey-background"
+                  style={{
+                    width: 280,
+                    height: 64,
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                  }}
+                >
+                  <h2 className="text-xl font-semibold">20 posti dipoibili</h2>
+                </div>
 
-              <div className="column-container remaining-seats-column flex items-center justify-center">
-                <p>5</p>
-              </div>
-            </div>
-            {/* ./Left column */}
-
-            <div className="col-span-1" />
-
-            {/* Right column */}
-            <div className="flex items-left items-center col-span-5 p-5">
-              <div>
-                <h1 className="text-4xl font-semibold">
+                <h1 className="text-4xl font-semibold mt-10">
                   {translate('TEXT.BECOME_PRO')}
                 </h1>
-                <p className="text-lg mt-5">
+                <p className="text-lg mt-7" style={{ color: '#D0D5DD' }}>
                   <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
                 </p>
-
-                <a href="#my-modal-2">
-                  <BorderedButton
-                    text={translate('BUTTONS.ACCEPT_CHALLENGE')}
-                    style={{ marginTop: 40 }}
-                    onClick={() => console.log('opened accept challenge modal')}
-                  />
-                </a>
               </div>
             </div>
-            {/* ./Right column */}
           </div>
           {/* ./Remaining Seats Section */}
 

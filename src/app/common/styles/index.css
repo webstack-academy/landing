@@ -28,6 +28,10 @@ p {
   background: #265946!important;
 }
 
+.grey-background {
+  background-color: #1D2939;
+}
+
 .header-title {
   font-size: 4.5rem;
   line-height: 1;
@@ -105,8 +109,9 @@ p {
 }
 
 .market-column {
-  min-height: 370px;
+  min-height: 300px;
   width: 401px!important;
+  padding: 10px;
 }
 
 .picture-separator-section {
