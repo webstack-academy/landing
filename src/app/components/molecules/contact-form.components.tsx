@@ -50,6 +50,7 @@ export const ContactForm = ({
         type="text"
         placeholder={translate('INPUTS.YOUR_NAME')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
+        style={{ backgroundColor: '#F5F5F5' }}
         ref={(node) => (name = node)}
       />
       {/* ./Name Input */}
@@ -60,6 +61,7 @@ export const ContactForm = ({
         style={{
           marginTop: 24,
           marginBottom: 24,
+          backgroundColor: '#F5F5F5',
         }}
         placeholder={translate('INPUTS.YOUR_SURNAME')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
@@ -70,6 +72,7 @@ export const ContactForm = ({
       {/* Email Input */}
       <input
         type="email"
+        style={{ backgroundColor: '#F5F5F5' }}
         placeholder={translate('INPUTS.YOUR_EMAIL')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
         ref={(node) => (email = node)}
@@ -78,7 +81,7 @@ export const ContactForm = ({
 
       {/* Phone Number Input */}
       <PhoneInput
-        style={{ marginTop: 24 }}
+        style={{ marginTop: 24, backgroundColor: '#F5F5F5', color: '#000' }}
         className={`input input-bordered w-full max-w-xs contact-input input-lg ${
           position === 'center' ? 'mx-auto' : 'ml-auto'
         }`}
@@ -102,8 +105,9 @@ export const ContactForm = ({
         text={translate('BUTTONS.SUBMIT')}
         style={{
           marginTop: 24,
-          backgroundColor: '#fff',
-          color: '#000',
+          backgroundColor: '#265946',
+          color: '#fafafa',
+          width: '100%',
         }}
         onClick={submit}
         className={status === 'sending' ? 'loading btn-disabled' : null}

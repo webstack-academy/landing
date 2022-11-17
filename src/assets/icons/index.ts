@@ -9,3 +9,5 @@ export { default as ArrowCircleIcon } from './arrow-circle.svg';
 export { default as Logo } from './webstack-logo.svg';
 export { default as SmallLogo } from './small-logo.svg';
 export { default as LinkedinIcon } from './linkedin.svg';
+export { default as CheckedIcon } from './checked.svg';
+export { default as PopularArrowIcon } from './popular-arrow.svg';

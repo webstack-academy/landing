@@ -43,10 +43,10 @@ class HomePage extends Component {
       <div>
         {/** Accept Challenge Modal */}
         <div className="modal" id="my-modal-2">
-          <div className="modal-box">
+          <div className="modal-box" style={{ backgroundColor: '#EAECF0' }}>
             <a
               href="#"
-              className="btn btn-sm btn-circle absolute right-2 top-2"
+              className="btn btn-sm btn-circle absolute right-2 top-2 bg-accent-content text-accent"
             >
               ✕
             </a>
@@ -73,11 +73,16 @@ class HomePage extends Component {
           >
             {/* Header Description */}
             <div className="grid grid-cols-1">
-              <h1 className="header-title font-semibold">
+              <div className="available-places-container mx-auto mt-5">
+                <span className="closed-number-span">Numero chiuso!</span>
+                <span>20 posti disponibili</span>
+              </div>
+
+              <h1 className="text-4xl lg:text-6xl font-semibold mt-5">
                 {translate('TEXT.HOME_SECTION_TITLE')}
               </h1>
               <p
-                className="text-lg mt-2 header-subtitle"
+                className="text-lg mt-5 header-subtitle"
                 style={{ marginLeft: '20%', marginRight: '20%' }}
               >
                 {translate('TEXT.ACADEMY_SUBSCRIBE')}
@@ -94,7 +99,7 @@ class HomePage extends Component {
             {/* ./Header Description */}
 
             {/* Header Picture */}
-            <div className="grid grid-cols-1 content-center">
+            <div className="grid grid-cols-1 content-center mt-10">
               <img src={HomeSectionImage} className="mx-auto" />
             </div>
             {/* ./Header Picture */}
@@ -117,11 +122,13 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.OUR_ACADEMY_DESCRIPTION" />
                 </p>
 
-                <BorderedButton
-                  text={translate('BUTTONS.START_NOW')}
-                  style={{ marginTop: 40 }}
-                  onClick={() => console.log('opened accept challenge modal')}
-                />
+                <a href="#my-modal-2">
+                  <BorderedButton
+                    text={translate('BUTTONS.START_NOW')}
+                    style={{ marginTop: 40 }}
+                    onClick={() => console.log('opened accept challenge modal')}
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -130,7 +137,7 @@ class HomePage extends Component {
           {/* Description Section */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-            style={{ paddingTop: 200 }}
+            style={{ paddingTop: 100 }}
             ref={this.accessSectionRef}
           >
             {/* Left column */}
@@ -166,7 +173,7 @@ class HomePage extends Component {
 
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-            style={{ marginBottom: 100 }}
+            style={{ marginTop: 100 }}
           >
             {/* Left column */}
             <div className="flex p-5">
@@ -179,11 +186,13 @@ class HomePage extends Component {
                   Professionisti del settore con anni di esperienza che ti
                   guideranno durante tutto il percorso.
                 </p>
-                <BorderedButton
-                  text={translate('BUTTONS.START_NOW')}
-                  style={{ marginTop: 40 }}
-                  onClick={() => console.log('opened accept challenge modal')}
-                />
+                <a href="#my-modal-2">
+                  <BorderedButton
+                    text={translate('BUTTONS.START_NOW')}
+                    style={{ marginTop: 40 }}
+                    onClick={() => console.log('opened accept challenge modal')}
+                  />
+                </a>
               </div>
             </div>
             {/* ./Left column */}
@@ -322,6 +331,33 @@ class HomePage extends Component {
           </div>
           {/* ./Access Section */}
 
+          {/* Remaining Seats Section */}
+          <div className="grid grid-cols-1" style={{ marginTop: 100 }}>
+            <div className="items-center text-center p-5">
+              <div className="md:mx-[100px] lg:mx-[200px] xl:mx-[200px] 2xl:mx-[200px]">
+                <div
+                  className="rounded-full linear-gradient-border flex justify-center items-center grey-background"
+                  style={{
+                    width: 280,
+                    height: 64,
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                  }}
+                >
+                  <h2 className="text-xl font-semibold">20 posti dipoibili</h2>
+                </div>
+
+                <h1 className="text-4xl font-semibold mt-10">
+                  {translate('TEXT.BECOME_PRO')}
+                </h1>
+                <p className="text-lg mt-7" style={{ color: '#D0D5DD' }}>
+                  <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* ./Remaining Seats Section */}
+
           {/* Market Requirements Section */}
           <div
             style={{ marginTop: 100, marginBottom: 100 }}
@@ -386,86 +422,92 @@ class HomePage extends Component {
           </div>
           {/* ./Market Requirements Section */}
 
-          {/* Remaining Seats Section */}
+          {/* Investment of your Live Section */}
           <div className="grid grid-cols-1" style={{ marginTop: 100 }}>
             <div className="items-center text-center p-5">
               <div className="md:mx-[100px] lg:mx-[200px] xl:mx-[200px] 2xl:mx-[200px]">
-                <div
-                  className="rounded-full linear-gradient-border flex justify-center items-center grey-background"
-                  style={{
-                    width: 280,
-                    height: 64,
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                  }}
-                >
-                  <h2 className="text-xl font-semibold">20 posti dipoibili</h2>
-                </div>
-
-                <h1 className="text-4xl font-semibold mt-10">
-                  {translate('TEXT.BECOME_PRO')}
+                <p className="text-xl mt-7">Webstack Academy</p>
+                <h1 className="text-4xl font-semibold mt-5">
+                  Il miglior investimento della tua vita
                 </h1>
-                <p className="text-lg mt-7" style={{ color: '#D0D5DD' }}>
-                  <Trans i18nKey="TEXT.BECOME_PRO_TEXT" />
+                <p className="text-2xl mt-5" style={{ color: '#D0D5DD' }}>
+                  Mano a mano fino al tuo primo stipendio.
                 </p>
+              </div>
+
+              <div className="available-places-container mx-auto mt-5">
+                <span className="closed-number-span">Numero chiuso</span>
+                <span>20 posti disponibili</span>
               </div>
             </div>
           </div>
-          {/* ./Remaining Seats Section */}
+          {/* ./Investment of your Live Section */}
 
           {/* Prices Section */}
           <div
-            style={{ paddingTop: 150, paddingBottom: 150 }}
+            style={{ paddingTop: 50, paddingBottom: 150 }}
             ref={this.pricingSectionRef}
           >
             <PriceColumnsComponent />
           </div>
           {/* ./Prices Section */}
+        </div>
 
-          {/* Contact Usa Section */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 contact-section pl-2 pr-2"
-            ref={this.contactSectionRef}
-          >
-            {/* Left column */}
-            <div className="grid grid-cols-2">
-              <div className="flex contact-description-container items-left items-center col-span-5">
-                <div>
-                  <h1 className="text-4xl">
-                    {translate('TEXT.NEED_MORE_INFO')}
-                  </h1>
-                  <h1 className="text-4xl">{translate('TEXT.CONTACT_US')}</h1>
-                  <p className="text-lg mt-5">
-                    <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" />{' '}
-                    <a
-                      className="underline"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://wa.me/message/7NRXN4H546I5M1"
-                    >
-                      WhatsApp
-                    </a>
-                    .
-                  </p>
+        {/* White Section */}
+        <div style={{ width: '100%', backgroundColor: '#EAECF0' }}>
+          <div className="md:container mx-auto page-container">
+            {/* Contact Usa Section */}
+
+            <div
+              className="md:mx-[100px] lg:mx-[200px] xl:mx-[200px] 2xl:mx-[200px] contact-section pl-2 pr-2"
+              ref={this.contactSectionRef}
+            >
+              <div className="">
+                <div className="contact-description-container">
+                  <div
+                    className="text-center mx-auto"
+                    style={{ maxWidth: 800 }}
+                  >
+                    <h1 className="text-4xl" style={{ color: '#111322' }}>
+                      {translate('TEXT.NEED_MORE_INFO')}
+                    </h1>
+                    <h1 className="text-4xl" style={{ color: '#111322' }}>
+                      {translate('TEXT.CONTACT_US')}
+                    </h1>
+                    <p className="text-lg mt-5" style={{ color: '#5D6B98' }}>
+                      <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" />{' '}
+                      <a
+                        className="underline"
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://wa.me/message/7NRXN4H546I5M1"
+                      >
+                        WhatsApp
+                      </a>
+                      .
+                    </p>
+                  </div>
+
+                  <div
+                    className="contact-form-container mx-auto"
+                    style={{ maxWidth: 400 }}
+                  >
+                    {/** Mailchip Signup Form */}
+                    <MailchimpForm />
+                    {/** ./Mailchip Signup Form */}
+                  </div>
                 </div>
               </div>
             </div>
-            {/* ./Left column */}
 
-            {/* Right column */}
-            <div className="flex contact-form-container">
-              {/** Mailchip Signup Form */}
-              <MailchimpForm />
-              {/** ./Mailchip Signup Form */}
-            </div>
-            {/* ./Right column */}
+            {/* ./Contact Usa Section */}
+
+            {/* Footer */}
+            <FooterComponent />
+            {/* ./Footer */}
           </div>
-          {/* ./Contact Usa Section */}
-
-          {/* Footer */}
-          <FooterComponent />
-          {/* ./Footer */}
         </div>
+        {/* ./White Section */}
       </div>
     );
   }

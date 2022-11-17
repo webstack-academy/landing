@@ -36,7 +36,7 @@ class Navbar extends Component<NavbarProps, any> {
         }`}
         style={{ zIndex: 99 }}
       >
-        <div className="navbar-start">
+        <div className="navbar-start lg:hidden">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
               <svg
@@ -96,11 +96,14 @@ class Navbar extends Component<NavbarProps, any> {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+        </div>
+
+        {/*<div className="navbar-start"></div>*/}
+        <div className="navbar-center hidden lg:flex mx-auto">
+          <a className="btn btn-ghost normal-case text-xl mr-5">
             <img src={Logo} className="mx-auto" />
           </a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
+
           <ul className="menu menu-horizontal p-0">
             {/**
              * Academy Button
