@@ -39,7 +39,7 @@ export const it = {
         'Degli sviluppatori ha usato Javascript negli ultimi 12 mesi',
       BECOME_PRO: 'Accetta la sfida e diventa un PRO',
       BECOME_PRO_TEXT:
-        "Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base della conoscienza dell'informatica. <br /> <br /> <br /> Non farti spaventare e buttati!",
+        "Per fare parte della nostra ACCADEMY devi superare un piccolo test che attesti un livello base della conoscienza dell'informatica.",
       NEED_MORE_INFO: 'Hai bisogno di più informazioni?',
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
