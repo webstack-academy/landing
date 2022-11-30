@@ -44,7 +44,7 @@ export const it = {
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
         'Compila il form e fissa una call, saremo super lieti di rispondere a qualsiasi tuo dubbio 😎. In alternativa, puoi scriverci su',
-      COPYRIGHT: 'Copyright © 2020 Webstack Academy.',
+      COPYRIGHT: 'Copyright © {{year}} Webstack Academy.',
       COOKIES_POLICY: 'Cookie Policy',
       PRIVACY_POLICY: 'Privacy Policy',
       TERMS_OF_USE: 'Termini e condizioni',

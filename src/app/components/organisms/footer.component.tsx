@@ -15,7 +15,7 @@ export const FooterComponent = () => {
     >
       <div className="col-span-3">
         <p className="text-lg" style={{ color: 'rgb(93, 107, 152)' }}>
-          {translate('TEXT.COPYRIGHT')}
+          {translate('TEXT.COPYRIGHT', { year: new Date().getFullYear() })}
         </p>
       </div>
 
