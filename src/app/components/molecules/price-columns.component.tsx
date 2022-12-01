@@ -131,7 +131,7 @@ export const PriceColumnsComponent = () => {
             <header className="pb-4 mb-4">
               <div className="mb-1 text-center">
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
-                  250 € in 12 rate
+                  225 € in 12 rate
                 </h1>
 
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
