@@ -19,7 +19,7 @@ export const PriceColumnsComponent = () => {
             <header className="pb-4 mb-4">
               <div className="mb-1 text-center">
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
-                  2450 €
+                  2.450 €
                 </h1>
 
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
@@ -83,6 +83,9 @@ export const PriceColumnsComponent = () => {
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
                   con anticipo di 250 €
                 </h2>
+                <h3 className="font-medium text-indigo-50 leading-snug mt-1">
+                  Totale: 2.650 €
+                </h3>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
                 Accesso completo solo dopo aver pagato tutte le rate. La formula{' '}
@@ -133,10 +136,12 @@ export const PriceColumnsComponent = () => {
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
                   225 € in 12 rate
                 </h1>
-
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
                   con anticipo di 250 €
                 </h2>
+                <h3 className="font-medium text-indigo-50 leading-snug mt-1">
+                  Totale: 2.950 €
+                </h3>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
                 Accesso completo solo dopo aver pagato tutte le rate. La formula{' '}
