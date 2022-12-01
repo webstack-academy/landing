@@ -19,7 +19,7 @@ export const PriceColumnsComponent = () => {
             <header className="pb-4 mb-4">
               <div className="mb-1 text-center">
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
-                  €1900
+                  2450 €
                 </h1>
 
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
@@ -49,7 +49,7 @@ export const PriceColumnsComponent = () => {
               <li className="flex items-center">
                 <img src={CheckedIcon} className="mr-2" />
                 <span>
-                  Accesso immediato all' intera piattaforma compresi materiale e
+                  Accesso immediato all'intera piattaforma compresi materiale e
                   lezioni extra.
                 </span>
               </li>
@@ -77,11 +77,11 @@ export const PriceColumnsComponent = () => {
             <header className="pb-4 mb-4">
               <div className="mb-1 text-center">
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
-                  €250 in 8 rate
+                  400 € in 6 rate
                 </h1>
 
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
-                  con anticipo di €200
+                  con anticipo di 250 €
                 </h2>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
@@ -108,7 +108,7 @@ export const PriceColumnsComponent = () => {
               <li className="flex items-center">
                 <img src={CheckedIcon} className="mr-2" />
                 <span>
-                  Accesso all' intera piattaforma compresi materiale e lezioni
+                  Accesso all'intera piattaforma compresi materiale e lezioni
                   extra solo dopo aver pagato le rate.
                 </span>
               </li>
@@ -131,11 +131,11 @@ export const PriceColumnsComponent = () => {
             <header className="pb-4 mb-4">
               <div className="mb-1 text-center">
                 <h1 className="text-4xl font-medium text-indigo-50 leading-snug">
-                  €190 in 12 rate
+                  250 € in 12 rate
                 </h1>
 
                 <h2 className="text-2xl font-medium text-indigo-50 leading-snug mt-4">
-                  con anticipo di €200
+                  con anticipo di 250 €
                 </h2>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
