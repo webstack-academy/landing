@@ -344,7 +344,7 @@ class HomePage extends Component {
                     marginRight: 'auto',
                   }}
                 >
-                  <h2 className="text-xl font-semibold">20 posti dipoibili</h2>
+                  <h2 className="text-xl font-semibold">20 posti disponibili</h2>
                 </div>
 
                 <h1 className="text-4xl font-semibold mt-10">
