@@ -18,11 +18,11 @@ export const it = {
       WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER:
         'Abbiamo creato un percorso per diventare',
       FULL_STACK_WEB_DEVELOPER: 'full-stack <br> web developer',
-      FOUR_MONTHS: 'in soli 4 mesi',
+      FOUR_MONTHS: 'in soli 6 mesi',
       OUR_ACADEMY: 'La nostra Academy',
       OUR_ACADEMY_DESCRIPTION:
         'Il corso si svolgerà nelle <strong>ore serali</strong> per permettere a tutti, compresi i lavoratori e studenti impegnati durante la giornata, di seguire comodamente le classi <strong>in diretta</strong>. <br /><br />Tutti gli studenti avranno accesso a vita alle classi e alla nostra community, dove potranno trovare contenuti aggiuntivi, ottenere <strong>supporto</strong> e fare <strong>networking</strong>.',
-      COURSE_DESCRIPTION_TITLE: 'Corso serale che ti cambierà la vita',
+      COURSE_DESCRIPTION_TITLE: 'Corso serale per diventare web developer',
       WEBSTACK_ACADEMY_FUTURE_HERE: 'Webstack Academy - il futuro è qui',
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
