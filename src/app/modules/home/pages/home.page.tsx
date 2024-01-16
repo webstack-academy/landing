@@ -75,7 +75,7 @@ class HomePage extends Component {
             <div className="grid grid-cols-1">
               <div className="available-places-container mx-auto mt-5">
                 <span className="closed-number-span">Numero chiuso!</span>
-                <span>20 posti disponibili</span>
+                <span>iscrizioni chiuse</span>
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-semibold mt-5">
@@ -116,7 +116,7 @@ class HomePage extends Component {
               <div className="text-left">
                 <h1 className="text-2xl">{translate('TEXT.OUR_ACADEMY')}</h1>
                 <h2 className="text-3xl mt-4">
-                  {translate('TEXT.FULL_STACK_DEV_4_MONTHS')}
+                  {translate('TEXT.FULL_STACK_DEV_COURSE')}
                 </h2>
                 <p className="text-xl mt-4">
                   <Trans i18nKey="TEXT.OUR_ACADEMY_DESCRIPTION" />
@@ -163,13 +163,13 @@ class HomePage extends Component {
             {/* Right column */}
 
             <div>
-              <img src={DescriptionSectionImage} />
+              <img src={DescriptionSectionImage} className="m-auto rounded-[10px]" />
             </div>
             {/* ./Right column */}
           </div>
           {/* ./Description Section */}
 
-          {/* Mentors Section */}
+          {/* instructors Section */}
 
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
@@ -181,7 +181,7 @@ class HomePage extends Component {
                 <h1 className="text-lg text-base-content">
                   Webstack Academy Team
                 </h1>
-                <h1 className="text-4xl">{translate('TEXT.MENTORS')}</h1>
+                <h1 className="text-4xl">{translate('TEXT.INSTRUCTORS')}</h1>
                 <p className="text-xl mt-2 py-5 pr-5">
                   Professionisti del settore con anni di esperienza che ti
                   guideranno durante tutto il percorso.
@@ -242,7 +242,7 @@ class HomePage extends Component {
             </div>
             {/* ./Right column */}
           </div>
-          {/* ./Mentors Section */}
+          {/* ./instructors Section */}
 
           {/* Access Section */}
           <div
@@ -344,7 +344,7 @@ class HomePage extends Component {
                     marginRight: 'auto',
                   }}
                 >
-                  <h2 className="text-xl font-semibold">20 posti disponibili</h2>
+                  <h2 className="text-xl font-semibold">iscrizioni chiuse</h2>
                 </div>
 
                 <h1 className="text-4xl font-semibold mt-10">
@@ -431,13 +431,13 @@ class HomePage extends Component {
                   Il miglior investimento della tua vita
                 </h1>
                 <p className="text-2xl mt-5" style={{ color: '#D0D5DD' }}>
-                  Mano a mano fino al tuo primo stipendio.
+                  Mano a mano fino alla realizzazione della tua web app.
                 </p>
               </div>
 
               <div className="available-places-container mx-auto mt-5">
                 <span className="closed-number-span">Numero chiuso</span>
-                <span>20 posti disponibili</span>
+                <span>iscrizioni chiuse</span>
               </div>
             </div>
           </div>
@@ -476,15 +476,6 @@ class HomePage extends Component {
                     </h1>
                     <p className="text-lg mt-5" style={{ color: '#5D6B98' }}>
                       <Trans i18nKey="TEXT.COMPILE_FORM_GET_INFO" />{' '}
-                      <a
-                        className="underline"
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://wa.me/message/7NRXN4H546I5M1"
-                      >
-                        WhatsApp
-                      </a>
-                      .
                     </p>
                   </div>
 

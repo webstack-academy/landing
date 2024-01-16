@@ -27,7 +27,7 @@ export const it = {
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
       COURSE_DESCRIPTION:
-        'Il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full -stack developer.',
+        'Il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full-stack developer.',
       START_NOW: 'Inizia ora su Webstack Academy',
       WILL_ACCESS_TO: 'Avrai accesso a:',
       MARKET_REQUIREMENTS: 'Necessità di mercato',
@@ -43,7 +43,7 @@ export const it = {
       NEED_MORE_INFO: 'Hai bisogno di più informazioni?',
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
-        'Compila il form e fissa una call, saremo super lieti di rispondere a qualsiasi tuo dubbio 😎. In alternativa, puoi scriverci su',
+        'Compila il form e fissa una call, saremo super lieti di rispondere a qualsiasi tuo dubbio 😎.',
       COPYRIGHT: 'Copyright © {{year}} Webstack Academy.',
       COOKIES_POLICY: 'Cookie Policy',
       PRIVACY_POLICY: 'Privacy Policy',
@@ -63,12 +63,12 @@ export const it = {
         'Lezioni individuali con ogni studente per la preparazione ai colloqui tecnici',
       SIGN_FORM_ERROR:
         "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
-      MENTORS: 'Mentors',
+      INSTRUCTORS: 'Instructors',
       OSTAP_DESCRIPTION:
         'Lead Developer e CyberSecurity expert<br><br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
       ALDO_DESCRIPTION:
         'Digital Products Maker, ex Wefox Product Manager <br><br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
-      FULL_STACK_DEV_4_MONTHS: 'Full Stack Developer, in 4 mesi',
+      FULL_STACK_DEV_COURSE: 'Corso Full Stack Developer di 6 mesi',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',

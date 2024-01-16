@@ -27,7 +27,7 @@ export const PriceColumnsComponent = () => {
                 </h2>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
-                Accesso a tutto 🤓. Assunto o ripreparato.
+                Accesso a tutto 🤓.
               </div>
             </header>
             <ul className="text-indigo-200 text-sm space-y-5 text-lg flex-grow mb-6">
@@ -58,14 +58,6 @@ export const PriceColumnsComponent = () => {
                 <img src={CheckedIcon} className="mr-2" />
                 <span>Migliori strumenti per lo sviluppo web.</span>
               </li>
-
-              <li className="flex items-center">
-                <img src={CheckedIcon} className="mr-2" />
-                <span>
-                  Lezioni individuali per la preparazione ai colloqui tecnici{' '}
-                  <b>in qualsiasi momento</b>.
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -88,8 +80,7 @@ export const PriceColumnsComponent = () => {
                 </h3>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
-                Accesso completo solo dopo aver pagato tutte le rate. La formula{' '}
-                <b>assunto o ripreparato</b> è sempre valida.
+                Accesso completo solo dopo aver pagato tutte le rate.
               </div>
             </header>
             <ul className="text-indigo-200 text-sm space-y-5 text-lg flex-grow mb-6">
@@ -115,14 +106,6 @@ export const PriceColumnsComponent = () => {
                   extra solo dopo aver pagato le rate.
                 </span>
               </li>
-
-              <li className="flex items-center">
-                <img src={CheckedIcon} className="mr-2" />
-                <span>
-                  Lezioni individuali per la preparazione ai colloqui tecnici
-                  <b> soltanto a fine corso</b>.
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -144,8 +127,7 @@ export const PriceColumnsComponent = () => {
                 </h3>
               </div>
               <div className="text-indigo-200 text-lg text-center mt-4">
-                Accesso completo solo dopo aver pagato tutte le rate. La formula{' '}
-                <b>assunto o ripreparato</b> è sempre valida.
+                Accesso completo solo dopo aver pagato tutte le rate.
               </div>
             </header>
             <ul className="text-indigo-200 text-sm space-y-5 text-lg flex-grow mb-6">
@@ -169,14 +151,6 @@ export const PriceColumnsComponent = () => {
                 <span>
                   Accesso all' intera piattaforma compresi materiale e lezioni
                   extra solo dopo aver pagato le rate.
-                </span>
-              </li>
-
-              <li className="flex items-center">
-                <img src={CheckedIcon} className="mr-2" />
-                <span>
-                  Lezioni individuali per la preparazione ai colloqui tecnici
-                  <b> soltanto a fine corso</b>.
                 </span>
               </li>
             </ul>
