@@ -4,7 +4,7 @@ import {
   AldoImage,
   DescriptionSectionImage,
   HomeSectionImage,
-  OstapImage,
+  OstapImage, RiccardoImage,
 } from '../../../../assets/images';
 import {
   ArrowCircleIcon,
@@ -219,41 +219,63 @@ class HomePage extends Component {
             <div className="gird items-center p-5 ">
               <div className="card card-side linear-gradient-border green-background rounded-xl">
                 <figure>
-                  <img src={OstapImage} alt="Ostap" />
+                  <img src={OstapImage} alt="Ostap"/>
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Ostap Markin</h2>
                   <p>
-                    <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
+                    <Trans i18nKey="TEXT.OSTAP_DESCRIPTION"/>
                   </p>
                   <a
                     href="https://www.linkedin.com/in/ostap-markin-505441173/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={LinkedinIcon} />
+                    <img src={LinkedinIcon}/>
                   </a>
                 </div>
               </div>
 
               <div
                 className="card card-side linear-gradient-border green-background rounded-xl"
-                style={{ marginTop: 50 }}
+                style={{marginTop: 50}}
               >
                 <figure>
-                  <img src={AldoImage} alt="Aldo" />
+                  <img src={AldoImage} alt="Aldo"/>
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Aldo Vincenti</h2>
                   <p>
-                    <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
+                    <Trans i18nKey="TEXT.ALDO_DESCRIPTION"/>
                   </p>
                   <a
                     href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={LinkedinIcon} />
+                    <img src={LinkedinIcon}/>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                className="card card-side linear-gradient-border green-background rounded-xl"
+                style={{marginTop: 50}}
+              >
+                <figure>
+                  <img src={RiccardoImage} alt="Aldo"/>
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Riccardo Terzaghi</h2>
+                  <p>
+                    <Trans i18nKey="TEXT.RICCARD_DESCRIPTION"/>
+                  </p>
+                  <a
+                    href="https://www.linkedin.com/in/riccardoterzaghi/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={LinkedinIcon}/>
                   </a>
                 </div>
               </div>
@@ -264,7 +286,7 @@ class HomePage extends Component {
 
           {/* Access Section */}
           <div
-            style={{ marginTop: 100 }}
+            style={{marginTop: 100}}
             className="items-center text-center overflow-x-auto"
           >
             <h1 className="text-4xl">{translate('TEXT.START_NOW')}</h1>
@@ -272,7 +294,7 @@ class HomePage extends Component {
 
             <div
               className="flex flex-nowrap overflow-x-auto"
-              style={{ marginTop: 50 }}
+              style={{marginTop: 50}}
             >
               {/* Community Column */}
               <div className="column-container access-column flex-none">

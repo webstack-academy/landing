@@ -65,10 +65,11 @@ export const it = {
         "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
       INSTRUCTORS: 'Instructors',
       OSTAP_DESCRIPTION:
-        'Lead Developer e CyberSecurity expert<br><br> Attualmente Senior Software Engineer consultant in Sky, membro r00tmi.it e founder di pullapp.club. <br> ',
+        'Application Security Architect && Developer<br><br> Consulente in Vodafone Automotive e in alcune startups, membro r00tmi.it, co-founder di wesync.dev e founder di pullapp.club. <br> ',
       ALDO_DESCRIPTION:
         'Digital Products Maker, ex Wefox Product Manager <br><br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
       FULL_STACK_DEV_COURSE: 'Corso Full Stack Developer di 6 mesi',
+      RICCARD_DESCRIPTION: 'Cloud Architect specializzato in AWS. <br><br> Cloud Engineer in Sky e Lead Developer in diverse startups. Esperto di sviluppo cloud, architetture serverless e di NodeJs.',
     },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',
