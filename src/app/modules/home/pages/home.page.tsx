@@ -24,6 +24,7 @@ import { FooterComponent } from '../../../components/organisms/footer.component'
 import Navbar from '../../../components/molecules/navbar.component';
 import { MailchimpForm } from '../../../components/organisms/mailchip-form.component';
 import { PriceColumnsComponent } from '../../../components/molecules/price-columns.component';
+import SpotVideo from '../../../../assets/videos/webstack-spot.mp4';
 
 class HomePage extends Component {
   private briefSectionRef = React.createRef();
@@ -83,26 +84,43 @@ class HomePage extends Component {
               </h1>
               <p
                 className="text-lg mt-5 header-subtitle"
-                style={{ marginLeft: '20%', marginRight: '20%' }}
+                style={{marginLeft: '20%', marginRight: '20%'}}
               >
                 {translate('TEXT.ACADEMY_SUBSCRIBE')}
               </p>
 
+              {/* Header Video */}
+              <div className="flex justify-center items-center mt-10 mb-2">
+
+                <div className="mockup-phone border-primary" style={{
+                  borderColor: '#9CC84B'
+                }}>
+                  <div className="camera"></div>
+                  <div className="display">
+                    
+                    <div className="artboard artboard-demo phone-1">
+                      {/* Video Player Section */}
+                      <video width="320" height="240" controls className="mx-auto">
+                        <source src={SpotVideo} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                      </video>
+                      {/* ./Video Player Section */}
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              {/* ./Header Video */}
+
               <a href="#my-modal-2">
                 <BorderedButton
                   text={translate('BUTTONS.START_NOW')}
-                  style={{ marginTop: 40 }}
+                  style={{marginTop: 40}}
                   onClick={() => console.log('opened accept challenge modal')}
                 />
               </a>
             </div>
             {/* ./Header Description */}
-
-            {/* Header Picture */}
-            <div className="grid grid-cols-1 content-center mt-10">
-              <img src={HomeSectionImage} className="mx-auto" />
-            </div>
-            {/* ./Header Picture */}
           </div>
           {/* Header Section */}
 
