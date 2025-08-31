@@ -62,7 +62,7 @@ export const it = {
       INDIVIDUAL_LESSONS_DESCRIPTION:
         'Lezioni individuali con ogni studente per la preparazione ai colloqui tecnici',
       SIGN_FORM_ERROR:
-        "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
+        "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente",
       INSTRUCTORS: 'Instructors',
       INSTRUCTORS_TITLE: 'I Nostri Docenti',
       INSTRUCTORS_DESCRIPTION: 'Professionisti esperti con anni di esperienza in aziende leader del settore tech. Ti guideranno nell\'acquisizione di competenze tecniche avanzate e nell\'adozione delle migliori pratiche professionali.',

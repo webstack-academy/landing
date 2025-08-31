@@ -1,0 +1,27 @@
+{
+  "rewrites": [
+    {
+      "source": "/terms-conditions/terms",
+      "destination": "/terms-conditions/terms.html"
+    },
+    {
+      "source": "/terms-conditions/terms/",
+      "destination": "/terms-conditions/terms.html"
+    },
+    {
+      "source": "/((?!api|_next/static|_next/image|favicon.ico|terms-conditions/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/terms-conditions/terms.html",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

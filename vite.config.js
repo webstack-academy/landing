@@ -11,5 +11,14 @@ export default defineConfig({
       interval: 1000,
       ignored: ['**/node_modules/**', '**/dist/**']
     }
+  },
+  publicDir: 'public',
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        terms: './terms-conditions/terms.html'
+      }
+    }
   }
 })
