@@ -523,10 +523,7 @@ export default function CurriculumSection() {
                                                 </div>
                                             </div>
                                             <div className="flex items-center space-x-2">
-                                                {index <= activeItem && (
-                                                    <img src={CheckedIcon} alt="Completed" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
-                                                )}
-                                                <div 
+                                                <div
                                                     className={`w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-200 ${
                                                         expandedItem === index ? 'rotate-180' : ''
                                                     }`} 

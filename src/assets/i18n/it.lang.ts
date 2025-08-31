@@ -27,7 +27,7 @@ export const it = {
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
       COURSE_DESCRIPTION:
-        'Il corso completo di 12 mesi include 7 mesi di formazione intensiva e 5 mesi di stage in azienda. Ti focalizzerai sulle tecnologie più richieste: JavaScript full-stack, React, Java Spring Boot, Python, AI e Cloud. Il programma prevede lezioni teoriche e pratiche serali, progetti reali e un percorso di stage garantito presso le nostre aziende partner. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer, full-stack developer e AI developer.',
+        'Il corso completo di <strong>12 mesi</strong> include <strong>7 mesi di formazione intensiva</strong> e <strong>5 mesi di stage in azienda</strong>. Ti focalizzerai sulle <strong>tecnologie più richieste</strong>: <strong>JavaScript full-stack</strong>, <strong>React</strong>, <strong>Java Spring Boot</strong>, <strong>Python</strong>, <strong>AI</strong> e <strong>Cloud</strong>. Il programma prevede <strong>lezioni teoriche e pratiche serali</strong>, <strong>progetti reali</strong> e un <strong>percorso di stage garantito</strong> presso le nostre aziende partner. Riceverai la formazione necessaria per superare <strong>colloqui tecnici</strong> per le posizioni di: <strong>front-end developer</strong>, <strong>back-end developer</strong>, <strong>full-stack developer</strong> e <strong>AI developer</strong>.',
       START_NOW: 'Inizia ora su Webstack Academy',
       WILL_ACCESS_TO: 'Avrai accesso a:',
       MARKET_REQUIREMENTS: 'Necessità di mercato',
@@ -44,7 +44,7 @@ export const it = {
       CONTACT_US: 'Contattaci!',
       COMPILE_FORM_GET_INFO:
         'Compila il form e fissa una call, saremo super lieti di rispondere a qualsiasi tuo dubbio 😎.',
-      COPYRIGHT: 'Copyright © {{year}} Webstack Academy.',
+      COPYRIGHT: 'Copyright © {{year}} Webstack Academy',
       COOKIES_POLICY: 'Cookie Policy',
       PRIVACY_POLICY: 'Privacy Policy',
       TERMS_OF_USE: 'Termini e condizioni',

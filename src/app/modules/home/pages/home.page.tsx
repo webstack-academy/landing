@@ -78,7 +78,7 @@ class HomePage extends Component {
             <div className="grid grid-cols-1">
               <div className="available-places-container mx-auto mt-5">
                 <span className="closed-number-span">Numero chiuso!</span>
-                <span>iscrizioni chiuse</span>
+                <span>10 posti disponibili</span>
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-semibold mt-5">
@@ -444,7 +444,7 @@ class HomePage extends Component {
                     marginRight: 'auto',
                   }}
                 >
-                  <h2 className="text-xl font-semibold">iscrizioni chiuse</h2>
+                  <h2 className="text-xl font-semibold">10 posti disponibili</h2>
                 </div>
 
                 <h1 className="text-4xl font-semibold mt-10">
@@ -541,7 +541,7 @@ class HomePage extends Component {
 
               <div className="available-places-container mx-auto mt-5">
                 <span className="closed-number-span">Numero chiuso</span>
-                <span>iscrizioni chiuse</span>
+                <span>10 posti disponibili</span>
               </div>
             </div>
           </div>

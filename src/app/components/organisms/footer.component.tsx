@@ -19,6 +19,12 @@ export const FooterComponent = () => {
         </p>
       </div>
 
+        <div className="col-span-5">
+            <p className="text-lg" style={{ color: 'rgb(93, 107, 152)' }}>
+                P.IVA 04105431201 | Via Emilia Ponente 20/2G, Bologna, BO, Italia
+            </p>
+        </div>
+
       <div className="col-span-2">
         <a target="_blank" rel="noreferrer" href={ConditionsUrl.TermsOfUse}>
           <p className="text-lg" style={{ color: 'rgb(93, 107, 152)' }}>
