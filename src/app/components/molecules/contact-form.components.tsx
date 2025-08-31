@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { ContactsUrl } from '../../common/enum/url.enum';
+import React, { useState } from 'react';
 import { translate } from '../../common/helpers/i18n/i18n.helper';
 import PhoneInput from 'react-phone-number-input';
 import { BigColoredButton } from '../atoms/button.component';
@@ -14,32 +13,38 @@ interface ContractFormProps {
 }
 
 export const ContactForm = ({
-  status,
-  message,
-  onValidated,
   position,
 }: ContractFormProps) => {
-  let email;
-  let name;
-  let lastName;
-  let phone;
+  const [formData, setFormData] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+    phone: ''
+  });
 
-  const submit = () => {
-    if (status !== 'sending') {
-      return onValidated({
-        EMAIL: email.value,
-        FNAME: name.value,
-        LNAME: lastName.value,
-        PHONE: phone,
-      });
-    }
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
 
-  useEffect(() => {
-    if (status === 'success') {
-      window.location.href = ContactsUrl.Calendly;
-    }
-  });
+  const handleSubmit = () => {
+    const { name, lastName, email, phone } = formData;
+    
+    // Construct mailto URL with pre-filled data
+    const subject = encodeURIComponent('Richiesta informazioni - Webstack Academy');
+    const body = encodeURIComponent(
+      `Salve,\n\nSono interessato/a al corso di Webstack Academy.\n\nEcco i miei dati di contatto:\n\nNome: ${name}\nCognome: ${lastName}\nEmail: ${email}\nTelefono: ${phone}\n\nGrazie per l'attenzione.\n\nCordiali saluti,\n${name} ${lastName}`
+    );
+    
+    const mailtoUrl = `mailto:info@webstackacademy.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoUrl;
+  };
+
+  const isFormValid = formData.name && formData.lastName && formData.email && formData.phone;
 
   return (
     <div
@@ -51,7 +56,8 @@ export const ContactForm = ({
         placeholder={translate('INPUTS.YOUR_NAME')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
         style={{ backgroundColor: '#F5F5F5' }}
-        ref={(node) => (name = node)}
+        value={formData.name}
+        onChange={(e) => handleInputChange('name', e.target.value)}
       />
       {/* ./Name Input */}
 
@@ -65,7 +71,8 @@ export const ContactForm = ({
         }}
         placeholder={translate('INPUTS.YOUR_SURNAME')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
-        ref={(node) => (lastName = node)}
+        value={formData.lastName}
+        onChange={(e) => handleInputChange('lastName', e.target.value)}
       />
       {/* ./Surname Input */}
 
@@ -75,7 +82,8 @@ export const ContactForm = ({
         style={{ backgroundColor: '#F5F5F5' }}
         placeholder={translate('INPUTS.YOUR_EMAIL')}
         className="input input-bordered w-full max-w-xs contact-input input-lg"
-        ref={(node) => (email = node)}
+        value={formData.email}
+        onChange={(e) => handleInputChange('email', e.target.value)}
       />
       {/* ./Email Input */}
 
@@ -86,20 +94,11 @@ export const ContactForm = ({
           position === 'center' ? 'mx-auto' : 'ml-auto'
         }`}
         placeholder={translate('INPUTS.YOUR_PHONE')}
-        value={phone}
-        onChange={(data) => {
-          console.log(data);
-          phone = data;
-        }}
+        value={formData.phone}
+        onChange={(value) => handleInputChange('phone', value || '')}
         defaultCountry="IT"
       />
       {/* ./Phone Number Input */}
-
-      {status === 'error' && (
-        <p className="text-md mt-4 text-red-700">
-          😭 {translate('TEXT.SIGN_FORM_ERROR')}
-        </p>
-      )}
 
       <BigColoredButton
         text={translate('BUTTONS.SUBMIT')}
@@ -108,9 +107,10 @@ export const ContactForm = ({
           backgroundColor: '#265946',
           color: '#fafafa',
           width: '100%',
+          opacity: isFormValid ? 1 : 0.6
         }}
-        onClick={submit}
-        className={status === 'sending' ? 'loading btn-disabled' : null}
+        onClick={handleSubmit}
+        className={!isFormValid ? 'btn-disabled' : ''}
       />
     </div>
   );
