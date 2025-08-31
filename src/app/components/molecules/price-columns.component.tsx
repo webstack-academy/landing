@@ -130,7 +130,7 @@ export const PriceColumnsComponent = () => {
               <ul className="text-indigo-200 text-sm space-y-3 flex-grow">
                 <li className="flex items-start">
                   <img src={CheckedIcon} className="mr-2 mt-1 flex-shrink-0" />
-                  <span>7 mesi di formazione intensiva serale</span>
+                  <span>5 mesi di formazione intensiva serale</span>
                 </li>
                 <li className="flex items-start">
                   <img src={CheckedIcon} className="mr-2 mt-1 flex-shrink-0" />
