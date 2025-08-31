@@ -25,6 +25,8 @@ import Navbar from '../../../components/molecules/navbar.component';
 import { MailchimpForm } from '../../../components/organisms/mailchip-form.component';
 import { PriceColumnsComponent } from '../../../components/molecules/price-columns.component';
 import SpotVideo from '../../../../assets/videos/webstack-spot.mp4';
+import CurriculumSection from "../../../components/organisms/roadmap.component";
+import TestimonialsSection from "../../../components/organisms/testimonials.component";
 
 class HomePage extends Component {
   private briefSectionRef = React.createRef();
@@ -34,7 +36,7 @@ class HomePage extends Component {
   private pricingSectionRef = React.createRef();
 
   private scroll(ref) {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    ref.current.scrollIntoView();
   }
 
   private showHide;
@@ -95,13 +97,13 @@ class HomePage extends Component {
                 <div className="mockup-phone border-primary" style={{
                   borderColor: '#9CC84B'
                 }}>
-                  <div className="camera"></div>
+                  <div className="camera" />
                   <div className="display">
                     
                     <div className="artboard artboard-demo phone-1">
                       {/* Video Player Section */}
                       <video width="320" height="240" controls className="mx-auto">
-                        <source src={SpotVideo} type="video/mp4"/>
+                        <source src={SpotVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                       {/* ./Video Player Section */}
@@ -112,7 +114,7 @@ class HomePage extends Component {
               </div>
               {/* ./Header Video */}
 
-              <a href="#my-modal-2">
+              <a href="https://calendly.com/webstackacademy/ammissione" target="_blank" rel="noreferrer">
                 <BorderedButton
                   text={translate('BUTTONS.START_NOW')}
                   style={{marginTop: 40}}
@@ -140,7 +142,7 @@ class HomePage extends Component {
                   <Trans i18nKey="TEXT.OUR_ACADEMY_DESCRIPTION" />
                 </p>
 
-                <a href="#my-modal-2">
+                <a href="https://calendly.com/webstackacademy/ammissione" target="_blank" rel="noreferrer">
                   <BorderedButton
                     text={translate('BUTTONS.START_NOW')}
                     style={{ marginTop: 40 }}
@@ -187,6 +189,8 @@ class HomePage extends Component {
           </div>
           {/* ./Description Section */}
 
+          <CurriculumSection />
+
           {/* instructors Section */}
 
           <div
@@ -197,14 +201,13 @@ class HomePage extends Component {
             <div className="flex p-5">
               <div className="text-left">
                 <h1 className="text-lg text-base-content">
-                  Webstack Academy Team
+                  Il Dream Team
                 </h1>
-                <h1 className="text-4xl">{translate('TEXT.INSTRUCTORS')}</h1>
+                <h1 className="text-4xl">{translate('TEXT.INSTRUCTORS_TITLE')}</h1>
                 <p className="text-xl mt-2 py-5 pr-5">
-                  Professionisti del settore con anni di esperienza che ti
-                  guideranno durante tutto il percorso.
+                  {translate('TEXT.INSTRUCTORS_DESCRIPTION')}
                 </p>
-                <a href="#my-modal-2">
+                <a href="https://calendly.com/webstackacademy/ammissione" target="_blank" rel="noreferrer">
                   <BorderedButton
                     text={translate('BUTTONS.START_NOW')}
                     style={{ marginTop: 40 }}
@@ -216,67 +219,124 @@ class HomePage extends Component {
             {/* ./Left column */}
 
             {/* Right column */}
-            <div className="gird items-center p-5 ">
-              <div className="card card-side linear-gradient-border green-background rounded-xl">
-                <figure>
-                  <img src={OstapImage} alt="Ostap"/>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Ostap Markin</h2>
-                  <p>
-                    <Trans i18nKey="TEXT.OSTAP_DESCRIPTION"/>
-                  </p>
-                  <a
-                    href="https://www.linkedin.com/in/ostap-markin-505441173/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={LinkedinIcon}/>
-                  </a>
+            <div className="grid items-center p-5 space-y-8">
+              {/* Ostap Card */}
+              <div className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                   style={{
+                     background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
+                     border: '2px solid #9CC84B',
+                     boxShadow: '0 10px 30px rgba(156, 200, 75, 0.1)'
+                   }}>
+                <div className="flex flex-col md:flex-row">
+                  {/* Image Section */}
+                  <div className="relative w-full md:w-48 h-64 md:h-auto overflow-hidden">
+                    <img 
+                      src={OstapImage} 
+                      alt="Ostap Markin"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-0 md:opacity-30 transition-opacity duration-500" />
+                  </div>
+                  
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h2 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">
+                        Ostap Markin
+                      </h2>
+                      <a
+                        href="https://www.linkedin.com/in/ostap-markin-505441173/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-10 h-10 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                      >
+                        <img src={LinkedinIcon} alt="LinkedIn" className="w-5 h-5" />
+                      </a>
+                    </div>
+                    <div className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                      <Trans i18nKey="TEXT.OSTAP_DESCRIPTION" />
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div
-                className="card card-side linear-gradient-border green-background rounded-xl"
-                style={{marginTop: 50}}
-              >
-                <figure>
-                  <img src={AldoImage} alt="Aldo"/>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Aldo Vincenti</h2>
-                  <p>
-                    <Trans i18nKey="TEXT.ALDO_DESCRIPTION"/>
-                  </p>
-                  <a
-                    href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={LinkedinIcon}/>
-                  </a>
+              {/* Aldo Card */}
+              <div className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                   style={{
+                     background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
+                     border: '2px solid #9CC84B',
+                     boxShadow: '0 10px 30px rgba(156, 200, 75, 0.1)'
+                   }}>
+                <div className="flex flex-col md:flex-row">
+                  {/* Image Section */}
+                  <div className="relative w-full md:w-48 h-64 md:h-auto overflow-hidden">
+                    <img 
+                      src={AldoImage} 
+                      alt="Aldo Vincenti"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-0 md:opacity-30 transition-opacity duration-500" />
+                  </div>
+                  
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h2 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">
+                        Aldo Vincenti
+                      </h2>
+                      <a
+                        href="https://www.linkedin.com/in/aldo-vincenti-08142b19a/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-10 h-10 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                      >
+                        <img src={LinkedinIcon} alt="LinkedIn" className="w-5 h-5" />
+                      </a>
+                    </div>
+                    <div className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                      <Trans i18nKey="TEXT.ALDO_DESCRIPTION" />
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div
-                className="card card-side linear-gradient-border green-background rounded-xl"
-                style={{marginTop: 50}}
-              >
-                <figure>
-                  <img src={RiccardoImage} alt="Aldo"/>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Riccardo Terzaghi</h2>
-                  <p>
-                    <Trans i18nKey="TEXT.RICCARD_DESCRIPTION"/>
-                  </p>
-                  <a
-                    href="https://www.linkedin.com/in/riccardoterzaghi/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={LinkedinIcon}/>
-                  </a>
+              {/* Riccardo Card */}
+              <div className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                   style={{
+                     background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
+                     border: '2px solid #9CC84B',
+                     boxShadow: '0 10px 30px rgba(156, 200, 75, 0.1)'
+                   }}>
+                <div className="flex flex-col md:flex-row">
+                  {/* Image Section */}
+                  <div className="relative w-full md:w-48 h-64 md:h-auto overflow-hidden">
+                    <img 
+                      src={RiccardoImage} 
+                      alt="Riccardo Terzaghi"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-0 md:opacity-30 transition-opacity duration-500" />
+                  </div>
+                  
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h2 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">
+                        Riccardo Terzaghi
+                      </h2>
+                      <a
+                        href="https://www.linkedin.com/in/riccardoterzaghi/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-10 h-10 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                      >
+                        <img src={LinkedinIcon} alt="LinkedIn" className="w-5 h-5" />
+                      </a>
+                    </div>
+                    <div className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+                      <Trans i18nKey="TEXT.RICCARD_DESCRIPTION" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -461,6 +521,10 @@ class HomePage extends Component {
             </div>
           </div>
           {/* ./Market Requirements Section */}
+
+          {/* Testimonials Section */}
+          <TestimonialsSection />
+          {/* ./Testimonials Section */}
 
           {/* Investment of your Live Section */}
           <div className="grid grid-cols-1" style={{ marginTop: 100 }}>

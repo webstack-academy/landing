@@ -94,11 +94,16 @@ class Navbar extends Component<NavbarProps, any> {
                   {translate('BUTTONS.PRICING')}
                 </a>
               </li>
+              <li>
+                <a href="https://calendly.com/webstackacademy/ammissione" target="_blank" rel="noreferrer">
+                  🚀{translate('BUTTONS.START_NOW')}!
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/*<div className="navbar-start"></div>*/}
+        {/* <div className="navbar-start"></div> */}
         <div className="navbar-center hidden lg:flex mx-auto">
           <a className="btn btn-ghost normal-case text-xl mr-5">
             <img src={Logo} className="mx-auto" />
@@ -143,6 +148,11 @@ class Navbar extends Component<NavbarProps, any> {
             <li>
               <a onClick={() => this.props.contactsCallback()}>
                 {translate('BUTTONS.CONTACT_US')}
+              </a>
+            </li>
+            <li>
+              <a href="https://calendly.com/webstackacademy/ammissione" target="_blank" rel="noreferrer">
+                🚀{translate('BUTTONS.START_NOW')}!
               </a>
             </li>
           </ul>

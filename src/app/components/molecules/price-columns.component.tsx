@@ -58,6 +58,11 @@ export const PriceColumnsComponent = () => {
                 <img src={CheckedIcon} className="mr-2" />
                 <span>Migliori strumenti per lo sviluppo web.</span>
               </li>
+
+              <li className="flex items-center">
+                <img src={CheckedIcon} className="mr-2" />
+                <span>Stage garantito di 5 mesi presso aziende partner.</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -106,6 +111,11 @@ export const PriceColumnsComponent = () => {
                   extra solo dopo aver pagato le rate.
                 </span>
               </li>
+              
+              <li className="flex items-center">
+                <img src={CheckedIcon} className="mr-2" />
+                <span>Stage garantito di 5 mesi presso aziende partner.</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -152,6 +162,11 @@ export const PriceColumnsComponent = () => {
                   Accesso all' intera piattaforma compresi materiale e lezioni
                   extra solo dopo aver pagato le rate.
                 </span>
+              </li>
+              
+              <li className="flex items-center">
+                <img src={CheckedIcon} className="mr-2" />
+                <span>Stage garantito di 5 mesi presso aziende partner.</span>
               </li>
             </ul>
           </div>

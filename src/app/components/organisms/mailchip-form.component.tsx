@@ -8,7 +8,7 @@ import {
   FormPosition,
 } from '../molecules/contact-form.components';
 
-const url = `https://academy.us12.list-manage.com/subscribe/post?u=${MailchipEnum.U}&id=${MailchipEnum.Id}`;
+const url = `https://academy.us6.list-manage.com/subscribe/post?u=${MailchipEnum.U}&id=${MailchipEnum.Id}`;
 
 export const MailchimpForm = (props: { formPosition?: FormPosition }) => (
   <MailchimpSubscribe

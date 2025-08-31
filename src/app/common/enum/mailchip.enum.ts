@@ -1,4 +1,4 @@
 export enum MailchipEnum {
-  U = '86bfd48f6262d2c5c163a09f5',
-  Id = '43027ffbae',
+  U = 'b69e652f9e83acf03fed7df1c',
+  Id = '956bd9057a',
 }

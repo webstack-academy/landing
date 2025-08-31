@@ -18,16 +18,16 @@ export const it = {
       WE_CREATED_A_PATH_TO_BE_A_WEB_DEVELOPER:
         'Abbiamo creato un percorso per diventare',
       FULL_STACK_WEB_DEVELOPER: 'full-stack <br> web developer',
-      FOUR_MONTHS: 'in 6 mesi',
+      FOUR_MONTHS: 'in 12 mesi',
       OUR_ACADEMY: 'La nostra Academy',
       OUR_ACADEMY_DESCRIPTION:
-        'Il corso si svolgerà nelle <strong>ore serali</strong> per permettere a tutti, compresi i lavoratori e studenti impegnati durante la giornata, di seguire comodamente le classi <strong>in diretta</strong>. <br /><br />Tutti gli studenti avranno accesso a vita alle classi e alla nostra community, dove potranno trovare contenuti aggiuntivi, ottenere <strong>supporto</strong> e fare <strong>networking</strong>.',
+        'Il percorso completo di <strong>12 mesi</strong> si svolge nelle <strong>ore serali</strong> per permettere a tutti, compresi i lavoratori e studenti impegnati durante la giornata, di seguire comodamente le classi <strong>in diretta</strong>. Dopo <strong>7 mesi di formazione intensiva</strong>, inizierai un <strong>stage di 5 mesi</strong> presso le nostre aziende partner. <br /><br />Tutti gli studenti avranno accesso a vita alle classi e alla nostra community, dove potranno trovare contenuti aggiuntivi, ottenere <strong>supporto</strong> e fare <strong>networking</strong>.',
       COURSE_DESCRIPTION_TITLE: 'Corso serale per diventare web developer',
       WEBSTACK_ACADEMY_FUTURE_HERE: 'Webstack Academy - il futuro è qui',
       COURSE_SUBTITLE:
         'Acquisirai le skill tecniche più ricercate dal mondo del lavoro relative allo sviluppo web.',
       COURSE_DESCRIPTION:
-        'Il corso si focalizzerà sul linguaggio full stack javascript, tecnologia con la quale le più importanti aziende tecnologiche hanno costruito interi ecosistemi software. Il nostro corso prevede lezioni teoriche pratiche relative allo sviluppo web, e nozioni di project management per imparare come si lavora nelle migliori aziende tecnologiche. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer e full-stack developer.',
+        'Il corso completo di 12 mesi include 7 mesi di formazione intensiva e 5 mesi di stage in azienda. Ti focalizzerai sulle tecnologie più richieste: JavaScript full-stack, React, Java Spring Boot, Python, AI e Cloud. Il programma prevede lezioni teoriche e pratiche serali, progetti reali e un percorso di stage garantito presso le nostre aziende partner. Riceverai la formazione necessaria per superare colloqui tecnici per le posizioni di: front-end developer, back-end developer, full-stack developer e AI developer.',
       START_NOW: 'Inizia ora su Webstack Academy',
       WILL_ACCESS_TO: 'Avrai accesso a:',
       MARKET_REQUIREMENTS: 'Necessità di mercato',
@@ -64,13 +64,14 @@ export const it = {
       SIGN_FORM_ERROR:
         "Si è verificato un errore, assicurati che tutti i campi siano compilati correttamente e che l'email non sia già stata utilizzata",
       INSTRUCTORS: 'Instructors',
+      INSTRUCTORS_TITLE: 'I Nostri Docenti',
+      INSTRUCTORS_DESCRIPTION: 'Professionisti esperti con anni di esperienza in aziende leader del settore tech. Ti guideranno nell\'acquisizione di competenze tecniche avanzate e nell\'adozione delle migliori pratiche professionali.',
       OSTAP_DESCRIPTION:
-        'Application Security Architect && Developer<br><br> Consulente in Vodafone Automotive e in alcune startups, membro r00tmi.it, co-founder di wesync.dev e founder di pullapp.club. <br> ',
+          'Application Architect & Full Stack Developer<br><br>🚀 Consulente per Vodafone Automotive e diverse startup tech<br>💡 Lead Developer in multiple high-growth startups<br>🔒 Specialista nel secure coding e architetture scalabili<br><br><strong>Ti insegnerà:</strong> Sviluppo full-stack, sicurezza applicativa e a scrivere codice solido e mantenibile',
       ALDO_DESCRIPTION:
-        'Digital Products Maker, ex Wefox Product Manager <br><br> Dal 2015 aiuto le aziende a rilasciare software migliori grazie alla mia visione orientata al prodotto.',
-      FULL_STACK_DEV_COURSE: 'Corso Full Stack Developer di 6 mesi',
-      RICCARD_DESCRIPTION: 'Cloud Architect specializzato in AWS. <br><br> Cloud Engineer in Sky e Lead Developer in diverse startups. Esperto di sviluppo cloud, architetture serverless e di NodeJs.',
-    },
+        'Digital Product Manager & Growth Expert<br><br>🎯 Ex-Product Manager in Wefox (fintech da €3B)<br>📈 Dal 2015 aiuta aziende a creare prodotti digitali vincenti<br>🚀 Specialista in product strategy e user experience<br><br><strong>Ti insegnerà:</strong> Product thinking, metodologie agili e come collaborare efficacemente in team',
+      FULL_STACK_DEV_COURSE: 'Corso Full Stack Developer di 12 mesi',
+      RICCARD_DESCRIPTION: 'AWS Cloud Architect & DevOps Expert<br><br>☁️ Cloud Engineer in Sky (media company internazionale)<br>⚡ Consulente Cloud per diverse aziende e progetti innovativi<br>🏗️ Specialista in architetture serverless e microservizi<br><br><strong>Ti insegnerà:</strong> Cloud computing, DevOps practices e come scalare applicazioni per grandi volumi di traffico'    },
     INPUTS: {
       YOUR_NAME: 'Il tuo nome',
       YOUR_SURNAME: 'Il tuo cognome',
